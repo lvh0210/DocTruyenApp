@@ -1357,12 +1357,12 @@
     invoke-direct {v14, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     .line 145
-    const-string v15, "\u0110\u1eccC TRUY\u1ec6N PRO"
+    const-string v15, "\u0110\u1ecdc Truy\u1ec7n"
 
     invoke-virtual {v14, v15}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 146
-    const/high16 v15, 0x41a00000    # 20.0f
+    const/high16 v15, 0x41b00000    # 22.0f
 
     invoke-virtual {v14, v15}, Landroid/widget/TextView;->setTextSize(F)V
 
@@ -1383,7 +1383,7 @@
     invoke-direct {v14, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     .line 152
-    const-string v15, " v1.1 "
+    const-string v15, " v1.1.8 "
 
     invoke-virtual {v14, v15}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -1462,7 +1462,7 @@
     invoke-direct {v8, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     .line 164
-    const-string v9, "Kho s\u00e1ch EPUB 3, TXT & Tr\u00ecnh duy\u1ec7t Web S\u1eafc Hi\u1ec7p"
+    const-string v9, "Th\u01b0 vi\u1ec7n Offline & Tr\u00ecnh \u0111\u1ecdc Web cao c\u1ea5p"
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

@@ -6,9 +6,9 @@
     "semantic_hash": ""
   },
   "workspace/decompiled/apktool.yml": {
-    "mtime": 1795236504.6498034,
-    "seen": 1795236825.6464868,
-    "ast_hash": "fdc85c8efa25350fe8de0f237e6f3a6b",
+    "mtime": 1795240699.2290843,
+    "seen": 1795240767.2707975,
+    "ast_hash": "b4b519c32c115f7067c0cba87afce1df",
     "semantic_hash": ""
   },
   "workspace/decompiled/assets/extensions/apptruyenchu/plugin.json": {
@@ -342,15 +342,15 @@
     "semantic_hash": ""
   },
   "CHECKPOINT.md": {
-    "mtime": 1795236714.9419441,
-    "seen": 1795236825.6464868,
-    "ast_hash": "c33c5350a3e6df6267bb283981663d17",
+    "mtime": 1795240690.9666345,
+    "seen": 1795240767.2707975,
+    "ast_hash": "c89b75aa4afbc90b436868d369836ea7",
     "semantic_hash": ""
   },
   "PLAN.md": {
-    "mtime": 1795235606.5815175,
-    "seen": 1795236825.6464868,
-    "ast_hash": "fcccd75404451e4c9d4b225bf525999a",
+    "mtime": 1795240126.3351927,
+    "seen": 1795240767.2707975,
+    "ast_hash": "56eeb1b73fff33f384c42346bacd2ccb",
     "semantic_hash": ""
   },
   "README.md": {
@@ -423,6 +423,12 @@
     "mtime": 1793409148.0,
     "seen": 1795235568.1752975,
     "ast_hash": "07694841b1e2b0d7f1c3f00536fbd59b",
+    "semantic_hash": ""
+  },
+  "RELEASE_NOTES.md": {
+    "mtime": 1795240091.81079,
+    "seen": 1795240767.2707975,
+    "ast_hash": "03facf1d1d6a7de8476909f0698f6e3f",
     "semantic_hash": ""
   }
 }

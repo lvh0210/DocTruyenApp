@@ -56,7 +56,7 @@
     .locals 3
 
     .line 20
-    const-string v0, "#0F1117"
+    const-string v0, "#0A0D14"
 
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
@@ -65,7 +65,7 @@
     sput v0, Lcom/doctruyen/ui/UiTheme;->DARK_BG:I
 
     .line 21
-    const-string v0, "#181B26"
+    const-string v0, "#121722"
 
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
@@ -74,7 +74,7 @@
     sput v0, Lcom/doctruyen/ui/UiTheme;->DARK_SURFACE:I
 
     .line 22
-    const-string v0, "#202534"
+    const-string v0, "#1A2232"
 
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
@@ -83,7 +83,7 @@
     sput v0, Lcom/doctruyen/ui/UiTheme;->DARK_SURFACE_ELEVATED:I
 
     .line 23
-    const-string v0, "#2A3144"
+    const-string v0, "#253046"
 
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
@@ -92,7 +92,7 @@
     sput v0, Lcom/doctruyen/ui/UiTheme;->DARK_BORDER:I
 
     .line 24
-    const-string v0, "#1F2433"
+    const-string v0, "#1B2333"
 
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
@@ -196,7 +196,7 @@
     sput v0, Lcom/doctruyen/ui/UiTheme;->LIGHT_TEXT_MUTED:I
 
     .line 40
-    const-string v0, "#2563EB"
+    const-string v0, "#3B82F6"
 
     invoke-static {v0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 

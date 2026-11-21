@@ -1292,6 +1292,38 @@
 
     invoke-virtual {v0, v3, v3, v3, v3}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
+    new-instance v4, Landroid/widget/Button;
+
+    invoke-direct {v4, p0}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
+
+    const-string v5, "\ud83c\udfe0 Menu"
+
+    invoke-virtual {v4, v5}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
+
+    const/high16 v5, 0x41300000    # 11.0f
+
+    invoke-virtual {v4, v5}, Landroid/widget/Button;->setTextSize(F)V
+
+    new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
+
+    const/4 v6, -0x2
+
+    const/4 v7, -0x2
+
+    invoke-direct {v5, v6, v7}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v4, v5}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    new-instance v5, Lcom/doctruyen/reader/web/WebBrowseActivity$ExitClickListener;
+
+    invoke-direct {v5, p0}, Lcom/doctruyen/reader/web/WebBrowseActivity$ExitClickListener;-><init>(Landroid/app/Activity;)V
+
+    invoke-virtual {v4, v5}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    iget-object v5, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->topBar:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v5, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
     .line 93
     new-instance v0, Landroid/widget/Button;
 
@@ -1318,7 +1350,7 @@
 
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
-    const/16 v5, 0x6e
+    const/16 v5, 0x50
 
     const/4 v6, -0x2
 
@@ -3163,30 +3195,11 @@
 .end method
 
 .method public onBackPressed()V
-    .locals 1
+    .locals 0
 
     .line 621
-    iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->webView:Landroid/webkit/WebView;
+    invoke-virtual {p0}, Lcom/doctruyen/reader/web/WebBrowseActivity;->finish()V
 
-    invoke-virtual {v0}, Landroid/webkit/WebView;->canGoBack()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 622
-    iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->webView:Landroid/webkit/WebView;
-
-    invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
-
-    goto :goto_0
-
-    .line 624
-    :cond_0
-    invoke-super {p0}, Landroid/app/Activity;->onBackPressed()V
-
-    .line 626
-    :goto_0
     return-void
 .end method
 

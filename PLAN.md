@@ -23,4 +23,9 @@
   - [x] 5.2: Tạo commit với thông điệp kỹ thuật chi tiết
   - [x] 5.3: Tạo kho lưu trữ trên GitHub và đẩy mã nguồn lên remote (`lvh0210/DocTruyenApp`)
   - [x] 5.4: Tạo Bản phát hành chính thức GitHub Release v1.1.8 kèm file cài đặt APK
-  - [x] 5.5: Cập nhật CHECKPOINT.md và tổng kết kết quả
+- [x] **Chặng 6: Nâng cấp Giao diện Sang trọng & Khắc phục Lỗi Thoát Menu Trực Tiếp (v1.1.9)**
+  - [x] 6.1: Viết lại `WebBrowseActivity.onBackPressed()` đóng Activity thoát thẳng ra Menu thay vì lặp lịch sử web
+  - [x] 6.2: Bổ sung nút `🏠 Menu` trên thanh công cụ duyệt web (`topBar`) qua `WebBrowseActivity$ExitClickListener`
+  - [x] 6.3: Thiết kế lại giao diện hiện đại: bảng màu Deep Obsidian (`UiTheme`), tiêu đề thanh thoát, huy hiệu v1.1.9
+  - [x] 6.4: Biên dịch, căn chỉnh zipalign và ký số APK v1.1.9 thành công
+  - [x] 6.5: Xuất bản GitHub Release v1.1.9 và đồng bộ mã nguồn lên Git

@@ -1,4 +1,4 @@
-# DocTruyen App v1.1.8 - Bản Phát Hành Tối Ưu Hóa Toàn Diện
+# DocTruyen App v1.1.9 - Bản Phát Hành Tinh Chỉnh Giao Diện & Thoát Menu Trực Tiếp
 
 Ứng dụng đọc truyện tranh & truyện chữ Android Native siêu nhẹ (< 1MB APK), hỗ trợ giải mã EPUB 3 / TXT stream, phát âm thanh đọc TTS chạy nền và lướt web truyện không quảng cáo.
 
@@ -6,25 +6,25 @@
 - **Tên tệp:** `com.doctruyen.apk`
 - **Dung lượng:** ~825 KB
 - **Package Name:** `com.doctruyen`
-- **Chữ ký số:** Scheme v1, v2, v3 (Ký cố định bằng release keystore, hỗ trợ cài đè vĩnh viễn)
+- **Phiên bản:** `versionCode 10` - `versionName 1.1.9`
+- **Chữ ký số:** Scheme v1, v2, v3 (Ký cố định bằng release keystore, hỗ trợ cài đè vĩnh viễn không cần gỡ)
 
 ---
 
-## 🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.1.8
+## 🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.1.9
 
-### 1. 🎨 Giao Diện Người Dùng (UI/UX)
-- **Thanh đo tiến độ đọc siêu mỏng (Reading Progress Bar):** Tích hợp thanh gradient động ở đỉnh màn hình, tự động tính toán % cuộn trang theo thời gian thực giúp theo dõi chính xác vị trí đang đọc trong chương.
-- **Chủ đề OLED Pure Black (`theme-black`):** Bổ sung nền đen tuyệt đối `#000000`, chữ xám sáng `#e2e8f0`, tiêu đề xanh nhạt `#93c5fd`, tiết kiệm pin tối đa cho màn hình AMOLED (như Xiaomi 15).
-- **Typography & Font Rendering:** Kích hoạt antialiasing và optimizeLegibility, giãn dòng `line-height: 1.85`, canh đều inter-word, hỗ trợ vùng đệm an toàn `env(safe-area-inset-top)` / `env(safe-area-inset-bottom)` cho màn hình tràn viền và camera đục lỗ.
+### 1. 🚪 Khắc Phục Triệt Để Vấn Đề Quay Lại & Thoát Menu Trực Tiếp
+- **Nút "🏠 Menu" trên thanh công cụ:** Bổ sung nút bấm chuyên dụng ngay trên đầu trình duyệt web đọc truyện (`WebBrowseActivity`), người dùng chỉ cần chạm 1 lần là thoát ngay lập tức về trang Menu chính (`MainActivity`).
+- **Phím Back thoát thẳng ra Menu:** Viết lại toàn diện hàm `onBackPressed()`, khi người dùng bấm phím quay lại hoặc cử chỉ vuốt cạnh máy, ứng dụng sẽ đóng trình duyệt và trở về Menu ngay lập tức, triệt tiêu hoàn toàn tình trạng bị kẹt lặp lại các trang web đã xem như một trình duyệt thông thường.
+- Nút `«` vẫn được giữ gọn gàng nếu người dùng chủ động muốn lùi lại 1 trang web trước đó.
 
-### 2. ⚡ Hiệu Năng & Trải Nghiệm Đọc
-- **Tăng tốc phần cứng GPU & Chống tràn RAM:** Kích hoạt `android:hardwareAccelerated="true"` và `android:largeHeap="true"` trong `AndroidManifest.xml`, tối ưu hóa WebView đạt 60-120fps và cho phép mở mượt mà các tệp EPUB/TXT nặng hàng nghìn chương mà không bị crash.
-- **Làm sạch văn bản thông minh (Content Sanitizer):** Tự động bóc tách và loại bỏ các câu từ rác, watermark bản quyền, link ngoài chèn vào text truyện.
-- **Tối ưu hình ảnh:** Toàn bộ ảnh minh họa tự động áp dụng `loading="lazy"`, `decoding="async"` và bo tròn góc 10px với bóng đổ nhẹ.
-
-### 3. 🛡️ Nâng Cấp Trình Chặn Quảng Cáo Cờ Bạc (AdBlock Engine)
-- Mở rộng bộ quy tắc CSS và MutationObserver trong trình duyệt web truyện tranh/chữ.
-- Chặn đứng 100% các banner, iframe cá cược, link nhà cái, popups cờ bạc rác mà không gây ảnh hưởng đến layout đọc truyện.
+### 2. 🎨 Thiết Kế Lại Giao Diện Hiện Đại & Sang Trọng (Anti-AI Plain Look)
+- **Tiêu đề & Thương hiệu chuẩn:** Chuẩn hóa tiêu đề **Đọc Truyện** với typography dứt khoát, huy hiệu phiên bản `v1.1.9` và phụ đề định vị "Thư viện Offline & Trình đọc Web cao cấp", loại bỏ phong cách đặt tên thô sơ rập khuôn.
+- **Bảng màu Deep Obsidian & Midnight Indigo:** 
+  - Nâng cấp `DARK_BG` về tone đen sâu huyền bí `#0A0D14`.
+  - Thẻ nổi bề mặt (`DARK_SURFACE`) chuyển sang tone `#121722` bo góc mềm mại kèm viền mỏng `#253046`.
+  - Màu điểm nhấn (`ACCENT_BLUE`) nâng cấp lên `#3B82F6` chuẩn Material 3 rực rỡ và hiện đại.
+- **Thanh công cụ trình duyệt cân đối:** Căn chỉnh tỉ lệ các nút `🏠 Menu`, `«`, thanh URL và nút `Đi` giúp giao diện thanh thoát, trực quan và dễ bấm bằng 1 ngón tay.
 
 ---
 
