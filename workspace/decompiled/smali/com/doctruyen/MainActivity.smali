@@ -1955,7 +1955,7 @@
     invoke-virtual {v8, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
     iget-boolean v10, v0, Lcom/doctruyen/MainActivity;->isDarkMode:Z
 
-    invoke-static {v11, v9, v10, v0}, Lcom/doctruyen/ui/UiModernizer;->styleQuickActions(Landroid/widget/Button;Landroid/widget/Button;ZLandroid/content/Context;)V
+    invoke-static {v8, v10, v0}, Lcom/doctruyen/ui/UiModernizer;->styleQuickActions(Landroid/widget/LinearLayout;ZLandroid/content/Context;)V
 
     .line 268
     iget-object v9, v0, Lcom/doctruyen/MainActivity;->containerLibrary:Landroid/widget/LinearLayout;
