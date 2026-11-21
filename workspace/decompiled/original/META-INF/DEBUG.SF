@@ -1,0 +1,224 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: HcK2xvPlCF8uVT6qM74rPREAsGENxUXzq0ddw85rlVM=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: 1v5Txw+LNXkg8KQmvVVo6l6UtaC+zRUfdWskNULyXJY=
+
+Name: assets/extensions/README.md
+SHA-256-Digest: GM7iUdJwJTZCYvs5aR7mlKeebv3jQ99VHzbvGS8IJ4g=
+
+Name: assets/extensions/apptruyenchu/apptruyenchu.zip
+SHA-256-Digest: FMzhwQT7muszAZVyiDNjlv5572ZSc4D7zUJAVkiQiMA=
+
+Name: assets/extensions/apptruyenchu/icon.png
+SHA-256-Digest: zZJeit/fD0G7mSECQUgUmBn5SxPoqvnR9xQhqVdamh8=
+
+Name: assets/extensions/apptruyenchu/plugin.json
+SHA-256-Digest: eAUPkIz6bHa5YtacxkC5WkyoEBmePxXLfLEMOVcG2tM=
+
+Name: assets/extensions/apptruyenchu/src/chap.js
+SHA-256-Digest: rrn5CAQTrQaziZwKNivAX5bf9Rc9Syoc96IEAla+KWc=
+
+Name: assets/extensions/apptruyenchu/src/detail.js
+SHA-256-Digest: WjExSpjITHWVI9gNM7kEfDhtGF57OIFkpA0zwZgE3To=
+
+Name: assets/extensions/apptruyenchu/src/gen.js
+SHA-256-Digest: A2NVahWa/Ew8YLsoKQnLFYT1NqgMKf2QYjbTUZMZQn8=
+
+Name: assets/extensions/apptruyenchu/src/genre.js
+SHA-256-Digest: L73Bb0Phrxjtdtskjbojf081wsOJFe9FL/iIS30VbmE=
+
+Name: assets/extensions/apptruyenchu/src/home.js
+SHA-256-Digest: wGEb99VI2Ygdjhq1GAx9mFhQTWIFMufwnxrg+6UvuDE=
+
+Name: assets/extensions/apptruyenchu/src/page.js
+SHA-256-Digest: Cb6WewHVNVeciob9Pnth5wbumoqxBjd7nC7U0Cro7lM=
+
+Name: assets/extensions/apptruyenchu/src/search.js
+SHA-256-Digest: G9eHInztxkStAB6yGHO+0q6hN2VOmx9vUxd45wQ6cEs=
+
+Name: assets/extensions/apptruyenchu/src/toc.js
+SHA-256-Digest: dwRLet7/lPuUe8jRQwyq+bataQFEhDD35Yz6hU+/FzM=
+
+Name: assets/extensions/extensions.json
+SHA-256-Digest: DXURmwD2q096R6PR5gO5rBmjR/rJrMy9eeIfDqtQg8w=
+
+Name: assets/extensions/metruyenchu/icon.png
+SHA-256-Digest: mMpPqgJmSm0X792kl1RFSl1MqZ2Zqr0Qh4ukZXWeTA8=
+
+Name: assets/extensions/metruyenchu/metruyenchu.zip
+SHA-256-Digest: 8Q1A5K3PpXYp8/u6l3docgq72k8icCOUHvKjc5iDny0=
+
+Name: assets/extensions/metruyenchu/plugin.json
+SHA-256-Digest: rw0g2ZujuXC1zHE3wNKdO3cpeuSk4yYvLzvCNwIFQpQ=
+
+Name: assets/extensions/metruyenchu/src/chap.js
+SHA-256-Digest: /pg7ecOzjBSpxwqIHHGUtI765OS5sbyN7l+0yjwFKxM=
+
+Name: assets/extensions/metruyenchu/src/detail.js
+SHA-256-Digest: Aoz+OyOcofGHIiFdHyzAm8D0RAoZUF7wGVS7Wa5Gz+4=
+
+Name: assets/extensions/metruyenchu/src/gen.js
+SHA-256-Digest: vuV0ZPzNEZDEP4Mvz+/2JIE8NGxl6SKU9/C1slahY7Q=
+
+Name: assets/extensions/metruyenchu/src/genre.js
+SHA-256-Digest: 7m5SatNa+PkTmgG683oBSEjA8bN0Vh/mLT5KnylX1JQ=
+
+Name: assets/extensions/metruyenchu/src/home.js
+SHA-256-Digest: W6iwPD7De7CvjJzJ5rUf3F2zzQQBYx6hZi4K3HHPZrw=
+
+Name: assets/extensions/metruyenchu/src/page.js
+SHA-256-Digest: ekEU3AG0CCbyo3Mv52ibDLHK4KLRMakvLXgQYv9k5tE=
+
+Name: assets/extensions/metruyenchu/src/search.js
+SHA-256-Digest: 6agLgFa+VwARSDBdI3XKoVPzrsBSX1P1p2i2h2kwRpQ=
+
+Name: assets/extensions/metruyenchu/src/toc.js
+SHA-256-Digest: 8G51KhsV9fR1Q0bcud5L3tRvyJNwQ1dr4sJsXr3em0g=
+
+Name: assets/extensions/tangthuvien/icon.png
+SHA-256-Digest: UojHp8/LhUwb7T9DcMhxj05bEUHWejifzlMPOGDQMwU=
+
+Name: assets/extensions/tangthuvien/plugin.json
+SHA-256-Digest: 496wzEkz4vdrzSwQKJZv+N4AUTMVJubWMMWRpwjpnxw=
+
+Name: assets/extensions/tangthuvien/src/chap.js
+SHA-256-Digest: EBo9k4PiZuichJ17D+V66yBoHCDyL3rbhJ/shAXX070=
+
+Name: assets/extensions/tangthuvien/src/detail.js
+SHA-256-Digest: GjK2TO3+XICOuh4UyADCfEnupljPzJgNeNDv8wkZZAk=
+
+Name: assets/extensions/tangthuvien/src/gen.js
+SHA-256-Digest: Ml2pRdAWU1tfRYbzns/5xMb6aeiDgR3G2UTw8rMV/gs=
+
+Name: assets/extensions/tangthuvien/src/genre.js
+SHA-256-Digest: Ybz1M8Z4JGnBFpc1gORs0mcwGf6QLW5vO8qD7he0bSc=
+
+Name: assets/extensions/tangthuvien/src/home.js
+SHA-256-Digest: /4VtC7je+jZzpOgTFtmnnp4NXZ6scmdx9qoogQbb14k=
+
+Name: assets/extensions/tangthuvien/src/page.js
+SHA-256-Digest: BUHEOelzi1Bn6v61pTYq+Po5PXMWWlzqPtPcWMIg39c=
+
+Name: assets/extensions/tangthuvien/src/search.js
+SHA-256-Digest: OBa3I9ZpvMqK/jXnat+ff333Hvh/wXeD0QdtAQdCtaA=
+
+Name: assets/extensions/tangthuvien/src/toc.js
+SHA-256-Digest: flcGH2TxyP3jaQPxVu1U3kjONcrDhz62SMLBdBtcSfc=
+
+Name: assets/extensions/tangthuvien/tangthuvien.zip
+SHA-256-Digest: DygnGvWRAIu0rafKVwqjUSYM8E4xqEVEZM8zv/8njk0=
+
+Name: assets/extensions/truyencv/icon.png
+SHA-256-Digest: DTo+Qu85abHPSfnuCrjTW1zlRPkvIXedYUjY4F83AXE=
+
+Name: assets/extensions/truyencv/plugin.json
+SHA-256-Digest: yz6iIUvxkUYL4nxDD/RmQi0s4oHXyNkm8+jWrvPFkIM=
+
+Name: assets/extensions/truyencv/src/chap.js
+SHA-256-Digest: tR4RkPF3e7YUl07YFKL3XK/XtSRKRZx0C82TtKHVokg=
+
+Name: assets/extensions/truyencv/src/detail.js
+SHA-256-Digest: 6VG/gFsSvLBKgt2oQeFaHzlHeUH/FTZ/Sr9GAsz6h/M=
+
+Name: assets/extensions/truyencv/src/gen.js
+SHA-256-Digest: g8Sy3gyeOJGiabFUQG9I+hXYsu1TS+Pw6KyWd3QMSiM=
+
+Name: assets/extensions/truyencv/src/genre.js
+SHA-256-Digest: NqVb/CB0V53OC+EGfaQE+N5/HfIYxXTe5qmlujh6WEw=
+
+Name: assets/extensions/truyencv/src/home.js
+SHA-256-Digest: m3Evx2xfNpU3Lr53sDC+qoD/vyf07Wozo15JSG+Ut+I=
+
+Name: assets/extensions/truyencv/src/page.js
+SHA-256-Digest: NFddwD/mfJr+9Oq8mgl+2d8Dl4imhIpVKGc2ifuhzmU=
+
+Name: assets/extensions/truyencv/src/search.js
+SHA-256-Digest: ymb1tVs+RhDq+ZP0pupufDv51IRHcLIkSAAo1+8IeWY=
+
+Name: assets/extensions/truyencv/src/toc.js
+SHA-256-Digest: 9xeJiFjjr/phUlPWdLassn38Xk4vyhbLWnaMO75axnA=
+
+Name: assets/extensions/truyencv/truyencv.zip
+SHA-256-Digest: TyNWlwRAV1/zdc3hVKKdZdSp+7COPXiuUSp8BcliW7U=
+
+Name: assets/extensions/truyenfull/icon.png
+SHA-256-Digest: O9yVX8EOBMcaqSIRdIzHLQcNg+5da9M+kTWeNj7Xtmc=
+
+Name: assets/extensions/truyenfull/plugin.json
+SHA-256-Digest: 3WMjwNYe2w/vdi3VPd0d6xhmRAcOREVXgWqIWW/151s=
+
+Name: assets/extensions/truyenfull/src/chap.js
+SHA-256-Digest: 8y8jwheEEdnAfKpsuZQblotTTuY4J43izz7A9dhV56s=
+
+Name: assets/extensions/truyenfull/src/detail.js
+SHA-256-Digest: ApADhBts4xUi6T3mcRUGCRBfvpz+fdnGrOafsE4wFNY=
+
+Name: assets/extensions/truyenfull/src/gen.js
+SHA-256-Digest: 0to7gNAYE7Tsu8sPVHYPkiOH345WzEsaQCM/FbBuMy0=
+
+Name: assets/extensions/truyenfull/src/genre.js
+SHA-256-Digest: CMXZe5FUHRpcLHdTkHDXSxIel05xHEeCRaCuwvo3zD4=
+
+Name: assets/extensions/truyenfull/src/home.js
+SHA-256-Digest: yO/kvOKXBB/UaH/xGnvK8dLyNu2j8VAbCegG5igMWPo=
+
+Name: assets/extensions/truyenfull/src/page.js
+SHA-256-Digest: y8399fI3YqBdxPnENQqhx7WG1b9lUu3qR9wBs7VoPxM=
+
+Name: assets/extensions/truyenfull/src/search.js
+SHA-256-Digest: 0CeJCMRTZhv8s/is/9KGZKdJHkmly3tZSIEp/KSctr0=
+
+Name: assets/extensions/truyenfull/src/toc.js
+SHA-256-Digest: LuW3IvD6kiJjleoe4HPkX/AIkBSSxj0vn9Ej2ZGwUMo=
+
+Name: assets/extensions/truyenfull/truyenfull.zip
+SHA-256-Digest: Mh8VFXC5rYKh2WBfHFmOuTKG33Cjf0kB65vQ1akyqPs=
+
+Name: assets/extensions/truyenyy/icon.png
+SHA-256-Digest: /wVVPymxa1yBj8JtlzxqzZSyqMCGksEwPgC7g5sZrqM=
+
+Name: assets/extensions/truyenyy/plugin.json
+SHA-256-Digest: 2mBGOxtGxsVNmcSeTVCVaeC7iRAWwzCXC1bU+f0fRU0=
+
+Name: assets/extensions/truyenyy/src/chap.js
+SHA-256-Digest: A4rDKNAmWNechJIQwKRtrF8k8fGPIevIHZiz68Pv1jM=
+
+Name: assets/extensions/truyenyy/src/detail.js
+SHA-256-Digest: Z5lNyiUBPRxVcRfCcfC6aJfo9Qfdmn/Oxy5bMKFGC+I=
+
+Name: assets/extensions/truyenyy/src/gen.js
+SHA-256-Digest: G8y9wN3q/cnEXLY5xTUTMTSVIQjqJtXDKxrNMMjyYpk=
+
+Name: assets/extensions/truyenyy/src/genre.js
+SHA-256-Digest: ii/LzQaajnH/oyXvuYklrD3rjEuYBGigXZy6rBDGSds=
+
+Name: assets/extensions/truyenyy/src/home.js
+SHA-256-Digest: 9xZjipiqCjWs9vcruHCTnv2rZ4A+xcuWT0/0qcFELZ4=
+
+Name: assets/extensions/truyenyy/src/page.js
+SHA-256-Digest: QfvBuQ0ldCVAkHPhl72ojD/Eg1+b1S90x581Gu8AGX8=
+
+Name: assets/extensions/truyenyy/src/search.js
+SHA-256-Digest: 1hEJwYFCLfipIJfkW3R/Xs6KuBOlkO37SO9Kk7e082g=
+
+Name: assets/extensions/truyenyy/src/toc.js
+SHA-256-Digest: lB/q7Lkf8d6PyNi2kWqducgNQbbsv/POXWU84hsDSDU=
+
+Name: assets/extensions/truyenyy/truyenyy.zip
+SHA-256-Digest: m8WZFD7iX/lD6+LngylmYV0hKlJ1yP27Koc8tvQ1jvA=
+
+Name: assets/reader/reader.html
+SHA-256-Digest: LCHewoI+8m+U7oooXp+Mqie3IjGQ6J62ns6xnU80JV0=
+
+Name: classes.dex
+SHA-256-Digest: riFsY5L2IB22MFnh+ujHqOYr0sTQjyKjoK9J+GGB1Aw=
+
+Name: res/drawable/ic_launcher.jpg
+SHA-256-Digest: nLaoL8yzmbs2lKLR30EtzhwgnmiTcrNVVH/SAcCEOwY=
+
+Name: resources.arsc
+SHA-256-Digest: UMinGSLqWmi3DADGR1mMLEsdOvpJTp5aL+7vPwcVW5E=
+

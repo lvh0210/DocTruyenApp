@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id" : "000003",
+    "name": "Tàng Thư Viện",
+    "author": "web",
+    "version": 1,
+    "source": "tangthuvien",
+    "base_url": "tangthuvien.net",
+    "regexp": "(www.)?tangthuvien.(net|vn|com)",
+    "description": "Đọc truyện trên trang Tàng Thư Viện",
+    "locale": "vi_VN",
+    "type": "novel",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": {
+      "url": "https://tangthuvien.net/ket-qua-tim-kiem?term=",
+      "search": "",
+      "page": "&page=",
+      "script": "search.js"
+    },
+    "detail": {
+      "url": "",
+      "script": "detail.js"
+    },
+    "page": {
+      "url": "",
+      "script": "page.js"
+    },
+    "toc": {
+      "url": "",
+      "script": "toc.js"
+    },
+    "chap": {
+      "url": "",
+      "script": "chap.js"
+    }
+  }
+}

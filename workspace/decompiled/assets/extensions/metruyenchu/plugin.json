@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "000010",
+    "name": "Mê Truyện Chữ",
+    "author": "web",
+    "version": 1,
+    "source": "metruyenchu",
+    "base_url": "metruyenchu.com.vn",
+    "regexp": "(www.)?metruyenchu.(com.vn|vn|net)",
+    "description": "Đọc truyện chữ convert online trên MeTruyenChu (metruyenchu.com.vn)",
+    "locale": "vi_VN",
+    "type": "novel",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": {
+      "url": "https://metruyenchu.com.vn/search?q=",
+      "search": "",
+      "page": "&page=",
+      "script": "search.js"
+    },
+    "detail": {
+      "url": "",
+      "script": "detail.js"
+    },
+    "page": {
+      "url": "",
+      "script": "page.js"
+    },
+    "toc": {
+      "url": "",
+      "script": "toc.js"
+    },
+    "chap": {
+      "url": "",
+      "script": "chap.js"
+    }
+  }
+}

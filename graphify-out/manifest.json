@@ -1,0 +1,428 @@
+{
+  "app/assets/extensions/extensions.json": {
+    "mtime": 1794663994.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5426ab494af01205a3b2e7c6893cc430",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/apktool.yml": {
+    "mtime": 1795236504.6498034,
+    "seen": 1795236825.6464868,
+    "ast_hash": "fdc85c8efa25350fe8de0f237e6f3a6b",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/plugin.json": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "724048099cf20d2d6790faf9dc5b3dbb",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/src/chap.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "808abd0fa7ca5f2d09537d75f6e9aace",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/src/detail.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5933233a2ec7f8f4e1f0bb1703fced1c",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/src/gen.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5c3b269cac0678d84f2b977f7b6fd46e",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/src/genre.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "32c626f32aab8b501d2498fa19bbd7be",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/src/home.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "4b459ea71804608443cf38f76fa91dd5",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/src/page.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "c675ce1558ec1e25128ab4acbc94299c",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/src/search.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "b29a7a4dc1653c8f47b86d3b208c640b",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/src/toc.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "7430e51e41c58617b4527469c66bb8c9",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/extensions.json": {
+    "mtime": 1794663984.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5426ab494af01205a3b2e7c6893cc430",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/plugin.json": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "ff6186ba15dec3a35edd8ff078b6030a",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/src/chap.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "f8f8bd6d2d57efd6ae76025496f01aaf",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/src/detail.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "e2036d523793b5cc7d9e142dd71afd42",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/src/gen.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "322cf0d45e9d72649878a68d05952311",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/src/genre.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "40c75c6950ed8568c15506df0b73054e",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/src/home.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "8a70ee909a3ff4eee4d8cea7164007b7",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/src/page.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "ff549d24d9da130c1c8eee7af487d908",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/src/search.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "1c7a8978869640f70d90d58feb948896",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/src/toc.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "abb059d8f161007e134a7456e1ddc9fc",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/plugin.json": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "cd0e6f4393158a52f1b5ae1c6f8bb0b1",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/src/chap.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "9ba970b479fa2e1c386e77be5eef974f",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/src/detail.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "323715e9a02d22fd501f0af9cc2506ab",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/src/gen.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "4e732fa31b3d4249cf029fb03ebb3605",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/src/genre.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "3c2b748f7a82a8765870a96c0b26e701",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/src/home.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "ced08cbc3d9ecdeb69f85ef207475e5c",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/src/page.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "0aee6b9e1474adad77a4fb2e66daa61c",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/src/search.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "06ec0cca80b06ede5173e70dbe7b394f",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/src/toc.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "4ee9b2a8a740d75acd82be172524b3b7",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/plugin.json": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "457d8c5b3dd285354b49f844ca6dca64",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/src/chap.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "f66590124b28f672c77cbbbee4ab804e",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/src/detail.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "c80ed303a5b9b199bde7ee69126016e7",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/src/gen.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "855cd91403ca6136a34f3be52fd7152e",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/src/genre.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "7215ee9c7d9dc229d2921a40e899ec5f",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/src/home.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "31f2fe6b7398eec7517ee3cf613fbc18",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/src/page.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "7215ee9c7d9dc229d2921a40e899ec5f",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/src/search.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "6f1d76475d135c10d92c09b703bcd1ce",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/src/toc.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "946e8a4ce926aadd772b1a5c3fe7fece",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/plugin.json": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "859be563402e82d26308405be588856a",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/src/chap.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "859ce0beffcb01de822be8b20b948111",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/src/detail.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "cca1b7e3002bb6da9b7f803540be7cd1",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/src/gen.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "0fe78c0088bb0e30fcf1ba513a8f338a",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/src/genre.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "72edc85e307eb168bc62f5f1a1cfba46",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/src/home.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "197744fdf2114cd1ada0e74fdbcea9a9",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/src/page.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "6bef108971d52493b33f236a115356f4",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/src/search.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "0fe78c0088bb0e30fcf1ba513a8f338a",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/src/toc.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "38151adccb29444485d57afe7611a864",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/plugin.json": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "bb27ec56f9df9843aad29a536528d01e",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/src/chap.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "d53adb8ce7a08374e381e472d400af27",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/src/detail.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "08dad957851c0771e396cfe2c700eabf",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/src/gen.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "227805ee3b9a4bba39d4a764775842f7",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/src/genre.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "4a14502180bba319d5c199f4d30a3ba6",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/src/home.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5354ecb70149f4b045ec261ed91369b5",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/src/page.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "25405cb9e9e99cc6c8b843ee875f4e44",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/src/search.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "4afba5e89070c31423f55020725f22f0",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/src/toc.js": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "1871e76ab28f40b97533d59752049050",
+    "semantic_hash": ""
+  },
+  "CHECKPOINT.md": {
+    "mtime": 1795236714.9419441,
+    "seen": 1795236825.6464868,
+    "ast_hash": "c33c5350a3e6df6267bb283981663d17",
+    "semantic_hash": ""
+  },
+  "PLAN.md": {
+    "mtime": 1795235606.5815175,
+    "seen": 1795236825.6464868,
+    "ast_hash": "fcccd75404451e4c9d4b225bf525999a",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1793241044.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5f07dd665805bba70946da4fd6ed341e",
+    "semantic_hash": ""
+  },
+  "app/assets/extensions/README.md": {
+    "mtime": 1793104256.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "1422c8d1e178da48404f6da43e01a535",
+    "semantic_hash": ""
+  },
+  "app/assets/reader/reader.html": {
+    "mtime": 1795236714.9629185,
+    "seen": 1795236825.6464868,
+    "ast_hash": "31c156fd327b2e9b14345a50edca236b",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/README.md": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "1422c8d1e178da48404f6da43e01a535",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/reader/reader.html": {
+    "mtime": 1795236714.9629185,
+    "seen": 1795236825.6464868,
+    "ast_hash": "31c156fd327b2e9b14345a50edca236b",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/apptruyenchu/icon.png": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5014826621b04707a20ef160b505a5bc",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/metruyenchu/icon.png": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5014826621b04707a20ef160b505a5bc",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/tangthuvien/icon.png": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5014826621b04707a20ef160b505a5bc",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyencv/icon.png": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "5014826621b04707a20ef160b505a5bc",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenfull/icon.png": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "26a4ba8c900637e1c8eda0c7f7f4c347",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/assets/extensions/truyenyy/icon.png": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "26a4ba8c900637e1c8eda0c7f7f4c347",
+    "semantic_hash": ""
+  },
+  "workspace/decompiled/res/drawable/ic_launcher.jpg": {
+    "mtime": 1793409148.0,
+    "seen": 1795235568.1752975,
+    "ast_hash": "07694841b1e2b0d7f1c3f00536fbd59b",
+    "semantic_hash": ""
+  }
+}

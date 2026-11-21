@@ -1,0 +1,21 @@
+# Android & Build Artifacts
+workspace/decompiled/build/
+workspace/*.apk
+workspace/*.idsig
+workspace/backup_data/
+build/
+
+# OS & Temp
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local IDE
+.idea/
+.vscode/
+*.iml

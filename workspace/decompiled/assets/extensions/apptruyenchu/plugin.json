@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id": "000011",
+    "name": "App Truyện Chữ",
+    "author": "web",
+    "version": 1,
+    "source": "apptruyenchu",
+    "base_url": "apptruyenchu.pro",
+    "regexp": "(www.)?apptruyenchu.(pro|com|net)",
+    "description": "Kho truyện chữ convert và dịch trên apptruyenchu.pro",
+    "locale": "vi_VN",
+    "type": "novel",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": {
+      "url": "https://apptruyenchu.pro/truyen?q=",
+      "search": "",
+      "page": "&page=",
+      "script": "search.js"
+    },
+    "detail": {
+      "url": "",
+      "script": "detail.js"
+    },
+    "page": {
+      "url": "",
+      "script": "page.js"
+    },
+    "toc": {
+      "url": "",
+      "script": "toc.js"
+    },
+    "chap": {
+      "url": "",
+      "script": "chap.js"
+    }
+  }
+}

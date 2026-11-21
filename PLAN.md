@@ -1,0 +1,25 @@
+# KẾ HOẠCH TỐI ƯU HÓA & PHÁT TRIỂN: DocTruyenApp
+
+- [x] **Chặng 1: Khởi tạo & Phân tích hiện trạng dự án (Analysis & Knowledge Graph)**
+  - [x] 1.1: Quét cấu trúc dự án DocTruyenApp và đọc lịch sử CHECKPOINT.md
+  - [x] 1.2: Thiết lập công cụ xây dựng (apktool, OpenJDK 11, Android SDK tools)
+  - [x] 1.3: Chạy Graphify phân tích kiến trúc, mối quan hệ class và luồng dữ liệu
+- [-] **Chặng 2: Đánh giá & Lập kế hoạch tối ưu App, UI, Chức năng (Deep Audit)**
+  - [-] 2.1: Phân tích UI Theme, Layout, Design System (`UiTheme.smali`, `res/values`, `reader.html`)
+  - [ ] 2.2: Phân tích Chức năng & Động cơ đọc (`ReaderActivity`, `ComicWebHelper`, `WebDirectScraper`, `EpubLazyEngine`, `TxtLazyEngine`)
+  - [ ] 2.3: Phân tích Hiệu năng, Bộ nhớ, Trình chặn quảng cáo AdBlock & Dịch vụ TTS ngầm (`TtsPlaybackService`)
+  - [ ] 2.4: Ủy quyền OpenRouter tổng hợp giải pháp tối ưu code và kiến trúc
+- [ ] **Chặng 3: Thực thi tối ưu hóa toàn diện (Comprehensive Optimization)**
+  - [ ] 3.1: Tối ưu UI & Trải nghiệm người dùng (Modern reader styles, typography, contrast, animation, dark/light theme, thanh điều hướng)
+  - [ ] 3.2: Tối ưu động cơ đọc sách & bóc tách web (Tối ưu hóa Reader HTML/JS, lazy loading ảnh, cache, tăng tốc cào chương)
+  - [ ] 3.3: Tối ưu Trình chặn quảng cáo AdBlock & Danh mục nguồn truyện comic/truyện chữ
+  - [ ] 3.4: Tối ưu hóa dịch vụ phát TTS & quản lý vòng đời ứng dụng chống leak RAM/ANR
+- [ ] **Chặng 4: Biên dịch, Đóng gói & Xác thực APK (Build & Verification)**
+  - [ ] 4.1: Biên dịch smali và tài nguyên qua apktool
+  - [ ] 4.2: Tối ưu zipalign và ký số APK bằng release keystore cố định
+  - [ ] 4.3: Kiểm tra tính toàn vẹn và dung lượng tệp APK thành phẩm
+- [ ] **Chặng 5: Khởi tạo Git & Đẩy mã nguồn lên GitHub (Git Initialization & Push)**
+  - [ ] 5.1: Thiết lập `.gitignore` chuẩn cho dự án Android Reversing/Smali
+  - [ ] 5.2: Tạo commit với thông điệp kỹ thuật chi tiết
+  - [ ] 5.3: Tạo kho lưu trữ trên GitHub và đẩy mã nguồn lên remote
+  - [ ] 5.4: Cập nhật CHECKPOINT.md và tổng kết kết quả

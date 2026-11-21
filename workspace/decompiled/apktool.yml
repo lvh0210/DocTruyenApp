@@ -1,0 +1,24 @@
+version: 3.0.3-dirty
+apkFileName: installed_base.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 33
+versionInfo:
+  versionCode: 9
+  versionName: 1.1.8
+resourcesInfo:
+  packageId: 127
+  keepRawValues: true
+doNotCompress:
+- arsc
+- jpg
+- png
+- assets/extensions/README.md
+- assets/extensions/metruyenchu/metruyenchu.zip
+- assets/extensions/tangthuvien/tangthuvien.zip
+- assets/extensions/truyencv/src/genre.js
+- assets/extensions/truyencv/src/page.js
+- assets/extensions/truyencv/truyencv.zip

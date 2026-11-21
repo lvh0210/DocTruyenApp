@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "id" : "000004",
+    "name": "Truyện YY",
+    "author": "web",
+    "version": 1,
+    "source": "truyenyy",
+    "base_url": "truyenyy.com",
+    "regexp": "(www.)?truyenyy.(com|vn|net)",
+    "description": "Đọc truyện trên trang Truyện YY",
+    "locale": "vi_VN",
+    "type": "novel",
+    "language": "javascript"
+  },
+  "script": {
+    "home": "home.js",
+    "genre": "genre.js",
+    "search": {
+      "url": "https://truyenyy.vip/tim-kiem?keywords=",
+      "search": "",
+      "page": "&page=",
+      "script": "search.js"
+    },
+    "detail": {
+      "url": "",
+      "script": "detail.js"
+    },
+    "page": {
+      "url": "",
+      "script": "page.js"
+    },
+    "toc": {
+      "url": "",
+      "script": "toc.js"
+    },
+    "chap": {
+      "url": "",
+      "script": "chap.js"
+    }
+  }
+}
