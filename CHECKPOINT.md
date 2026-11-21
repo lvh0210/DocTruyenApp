@@ -1,6 +1,6 @@
 # CHECKPOINT TIẾN ĐỘ DỰ ÁN: DocTruyenApp (com.doctruyen)
-*Thời gian cập nhật:* 2026-11-21 11:56:00
-*Trạng thái:* Hoàn tất tối ưu hóa toàn diện, đóng gói APK v1.1.8 và đẩy mã nguồn lên GitHub | Phiên làm việc: 0c355b61-a96d-4330-a08b-4a2c9ff0bbc2
+*Thời gian cập nhật:* 2026-11-21 12:48:00
+*Trạng thái:* Đã xuất bản Release v1.1.8 chính thức trên GitHub kèm tệp APK cài đặt | Phiên làm việc: 0c355b61-a96d-4330-a08b-4a2c9ff0bbc2
 
 ## 1. Công Việc Đã Hoàn Thành (Completed Tasks)
 1. **Thiết lập chuỗi công cụ Android Reversing & Build trên Windows:**
@@ -25,10 +25,13 @@
    - Đã ký số v1, v2, v3 schemes bằng release keystore cố định -> file thành phẩm: `bin/com.doctruyen.apk` (825 KB).
 6. **Khởi tạo Git & Đẩy lên GitHub:**
    - Thiết lập `.gitignore` chuẩn cho Android Smali/Reverse project.
-   - Khởi tạo Git repo và commit toàn bộ mã nguồn sạch.
-   - Tạo repo và đẩy toàn bộ lên GitHub: https://github.com/lvh0210/DocTruyenApp (Branch `master`, Clean working tree).
+   - Khởi tạo Git repo và commit toàn bộ mã nguồn sạch lên `origin/master`.
+7. **Xuất Bản Bản Phát Hành Chính Thức (GitHub Release):**
+   - Đã tạo Release chính thức `v1.1.8` tại: https://github.com/lvh0210/DocTruyenApp/releases/tag/v1.1.8
+   - Đã đính kèm tệp nhị phân cài đặt trực tiếp: `com.doctruyen.apk` (825 KB).
 
-## 2. Thông Tin Kho Lưu Trữ & Tệp Trọng Tâm
+## 2. Thông Tin Kho Lưu Trữ & Bản Phát Hành
+- Bản phát hành chính thức: https://github.com/lvh0210/DocTruyenApp/releases/tag/v1.1.8
 - GitHub Repository: https://github.com/lvh0210/DocTruyenApp
 - Bản APK thành phẩm: `D:\VibeCode\DocTruyenApp\bin\com.doctruyen.apk`
 - Keystore ký cố định: `D:\VibeCode\DocTruyenApp\keystore\release.keystore`

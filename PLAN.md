@@ -22,4 +22,5 @@
   - [x] 5.1: Thiết lập `.gitignore` chuẩn cho dự án Android Reversing/Smali
   - [x] 5.2: Tạo commit với thông điệp kỹ thuật chi tiết
   - [x] 5.3: Tạo kho lưu trữ trên GitHub và đẩy mã nguồn lên remote (`lvh0210/DocTruyenApp`)
-  - [x] 5.4: Cập nhật CHECKPOINT.md và tổng kết kết quả
+  - [x] 5.4: Tạo Bản phát hành chính thức GitHub Release v1.1.8 kèm file cài đặt APK
+  - [x] 5.5: Cập nhật CHECKPOINT.md và tổng kết kết quả
