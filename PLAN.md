@@ -1,16 +1,18 @@
-# KẾ HOẠCH TỐI ƯU HÓA & PHÁT TRIỂN: DocTruyenApp
+# KẾ HOẠCH TỐI ƯU HÓA & NÂNG CẤP GIAO DIỆN HỢP LÝ: DocTruyenApp
 
-- [x] **Chặng 1: Tối ưu hóa toàn diện App, UI & Trình đọc (v1.1.8)**
-  - [x] 1.1: Tối ưu UI (Thanh tiến độ OLED, Pure Black `#000000`, safe-area insets, typography)
-  - [x] 1.2: Bật tăng tốc phần cứng & largeHeap trong AndroidManifest; nâng cấp bộ lọc AdBlock
-  - [x] 1.3: Biên dịch, ký số và xuất bản GitHub Release v1.1.8
-- [x] **Chặng 2: Nâng cấp Giao diện Sang trọng & Nút Thoát Menu Trực Tiếp (v1.1.9)**
-  - [x] 2.1: Sửa triệt để `WebBrowseActivity.onBackPressed()` đóng Activity thoát thẳng ra Menu
-  - [x] 2.2: Bổ sung nút `🏠 Menu` trên thanh công cụ duyệt web (`topBar`)
-  - [x] 2.3: Tinh chỉnh Design System Deep Obsidian (`#0A0D14`), huy hiệu phiên bản thanh lịch
-  - [x] 2.4: Biên dịch APK v1.1.9 ký số cố định v1/v2/v3 scheme thành công (825 KB)
-- [x] **Chặng 3: Quy chuẩn hóa Bản phát hành GitHub & Tinh giản tài liệu**
-  - [x] 3.1: Đặt lại tiêu đề Release chuẩn xác: `DocTruyen v1.1.9`
-  - [x] 3.2: Đổi tên và đính kèm tệp asset đúng mã phiên bản: `DocTruyen-v1.1.9.apk`
-  - [x] 3.3: Tinh giản lộ trình phát triển trong README.md và PLAN.md tránh dài dòng
-  - [x] 3.4: Đồng bộ commit và đẩy toàn bộ mã nguồn lên GitHub repository
+- [x] **Chặng 1: Tái cấu trúc Kiến trúc Layout Màn hình chính (MainActivity Sticky Architecture)**
+  - [x] 1.1: Tách Header và TabBar ra khỏi ScrollView tạo cấu trúc Sticky Top Navigation
+  - [x] 1.2: Di chuyển Thẻ Tiếp Tục Đọc vào bên trong Tab Tủ Sách, triệt tiêu hoàn toàn Layout Shift
+  - [x] 1.3: Nâng cấp TabBar thành Segmented Pill Control cố định, luôn sẵn sàng chuyển tab 1 chạm
+- [x] **Chặng 2: Tái thiết kế Bố cục Tab Tủ Sách & Tab Khám Phá Web**
+  - [x] 2.1: Chuẩn hóa cụm Quick Action Buttons (Mở tệp / Quét thư mục) cân đối tỉ lệ 50:50
+  - [x] 2.2: Thiết kế lại Tab Web thành Modern Web Hub (Hero Browser Card + Direct URL Reader Card)
+  - [x] 2.3: Nâng cấp Thẻ Tiếp Tục Đọc trực quan với tiêu đề nổi bật và nhãn tiến độ
+- [x] **Chặng 3: Chuẩn hóa Thanh công cụ Trình duyệt Web (WebBrowseActivity)**
+  - [x] 3.1: Thay thế kích thước pixel cứng bằng UiTheme.dp() đồng bộ trên mọi độ phân giải màn hình
+  - [x] 3.2: Thiết kế lại các nút bấm (Menu, Back, URL Pill, Go, Dark Mode) dạng bo tròn viên thuốc
+  - [x] 3.3: Tối ưu nút hành động đáy "Đọc Ngay & Phát TTS" nổi bật
+- [x] **Chặng 4: Biên dịch APK, Ký số & Xuất bản**
+  - [x] 4.1: Biên dịch smali và tài nguyên qua apktool (0 lỗi cú pháp)
+  - [x] 4.2: Tối ưu zipalign và ký số APK bằng release keystore cố định (v1, v2, v3 scheme)
+  - [x] 4.3: Đồng bộ commit lên GitHub và xuất bản Release v1.2.0 chính thức kèm file cài đặt

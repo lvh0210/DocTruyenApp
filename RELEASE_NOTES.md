@@ -1,34 +1,39 @@
-# DocTruyen App v1.1.9 - Bản Phát Hành Tinh Chỉnh Giao Diện & Thoát Menu Trực Tiếp
+# DocTruyen App v1.2.0 - Tái Cấu Trúc Giao Diện Chuẩn Native & Sticky Navigation
 
-Ứng dụng đọc truyện tranh & truyện chữ Android Native siêu nhẹ (< 1MB APK), hỗ trợ giải mã EPUB 3 / TXT stream, phát âm thanh đọc TTS chạy nền và lướt web truyện không quảng cáo.
+Bản nâng cấp toàn diện về mặt kiến trúc giao diện người dùng (UI/UX Architecture), chuyển đổi từ phong cách cuộn một trang đơn điệu sang hệ thống điều hướng chuẩn ứng dụng di động hiện đại.
 
 ## 📦 Tệp Cài Đặt (Release Asset)
-- **Tên tệp:** `DocTruyen-v1.1.9.apk`
+- **Tên tệp:** `DocTruyen-v1.2.0.apk`
 - **Dung lượng:** ~825 KB
 - **Package Name:** `com.doctruyen`
-- **Phiên bản:** `versionCode 10` - `versionName 1.1.9`
+- **Phiên bản:** `versionCode 11` - `versionName 1.2.0`
 - **Chữ ký số:** Scheme v1, v2, v3 (Ký cố định bằng release keystore, hỗ trợ cài đè vĩnh viễn không cần gỡ)
 
 ---
 
-## 🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.1.9
+## 🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.2.0
 
-### 1. 🚪 Khắc Phục Triệt Để Vấn Đề Quay Lại & Thoát Menu Trực Tiếp
-- **Nút "🏠 Menu" trên thanh công cụ:** Bổ sung nút bấm chuyên dụng ngay trên đầu trình duyệt web đọc truyện (`WebBrowseActivity`), người dùng chỉ cần chạm 1 lần là thoát ngay lập tức về trang Menu chính (`MainActivity`).
-- **Phím Back thoát thẳng ra Menu:** Viết lại toàn diện hàm `onBackPressed()`, khi người dùng bấm phím quay lại hoặc cử chỉ vuốt cạnh máy, ứng dụng sẽ đóng trình duyệt và trở về Menu ngay lập tức, triệt tiêu hoàn toàn tình trạng bị kẹt lặp lại các trang web đã xem như một trình duyệt thông thường.
-- Nút `«` vẫn được giữ gọn gàng nếu người dùng chủ động muốn lùi lại 1 trang web trước đó.
+### 1. 📌 Thanh Điều Hướng Cố Định (Sticky Top Navigation)
+- **Tách biệt Header & TabBar khỏi vùng cuộn:** Trước đây toàn bộ màn hình bị nhét trong một thẻ cuộn khiến thanh TabBar bị cuốn mất khi người dùng duyệt danh sách truyện. Ở bản v1.2.0, Header và TabBar được ghim cố định ở đỉnh màn hình (`MATCH_PARENT, VERTICAL`), chỉ có vùng nội dung bên dưới cuộn (`weight: 1.0f`).
+- **Chuyển Tab 1 chạm tức thì:** Dù đang ở bất kỳ vị trí cuộn nào trong tủ sách hàng trăm cuốn, người dùng luôn có thể chạm vào TabBar để đổi tab ngay lập tức mà không cần cuộn ngược lên đầu.
 
-### 2. 🎨 Thiết Kế Lại Giao Diện Hiện Đại & Sang Trọng (Anti-AI Plain Look)
-- **Tiêu đề & Thương hiệu chuẩn:** Chuẩn hóa tiêu đề **Đọc Truyện** với typography dứt khoát, huy hiệu phiên bản `v1.1.9` và phụ đề định vị "Thư viện Offline & Trình đọc Web cao cấp", loại bỏ phong cách đặt tên thô sơ rập khuôn.
-- **Bảng màu Deep Obsidian & Midnight Indigo:** 
-  - Nâng cấp `DARK_BG` về tone đen sâu huyền bí `#0A0D14`.
-  - Thẻ nổi bề mặt (`DARK_SURFACE`) chuyển sang tone `#121722` bo góc mềm mại kèm viền mỏng `#253046`.
-  - Màu điểm nhấn (`ACCENT_BLUE`) nâng cấp lên `#3B82F6` chuẩn Material 3 rực rỡ và hiện đại.
-- **Thanh công cụ trình duyệt cân đối:** Căn chỉnh tỉ lệ các nút `🏠 Menu`, `«`, thanh URL và nút `Đi` giúp giao diện thanh thoát, trực quan và dễ bấm bằng 1 ngón tay.
+### 2. ⚡ Triệt Tiêu Hoàn Toàn Hiện Tượng Nhảy Giật (Zero Layout Shift)
+- **Đưa Thẻ Tiếp Tục Đọc vào bên trong Tab Tủ Sách:** Loại bỏ vị trí chen ngang giữa Header và TabBar trước đây. Khi người dùng chuyển qua lại giữa các Tab (Web, Truyện Chữ, Truyện Tranh), vị trí thanh TabBar giữ nguyên tuyệt đối, không còn bị co giật vị trí.
+
+### 3. ⚖️ Cụm Nút Thao Tác Cân Đối 50:50 (Balanced Action Cards)
+- Chuẩn hóa hai nút `📂 Mở Tệp Sách` và `🔄 Quét Download` với tỉ lệ chia đều 1:1, bo góc 12dp mềm mại, margin cân xứng và font chữ rõ ràng, không bị tràn viền hay lệch tỉ lệ.
+
+### 4. 🌐 Tái Thiết Kế Tab Khám Phá Web (Modern Web Hub)
+- **Web Browser Hero Card:** Khung chào đón trực quan với nút `🔍 Mở Trình Duyệt Web »` rực rỡ và mô tả tính năng bóc tách TTS & chặn quảng cáo.
+- **Direct URL Reader Card:** Khung dán link chương độc lập, ô nhập bo tròn kèm nút `▶ Bóc Tách & Đọc Ngay` thanh thoát.
+
+### 5. 🎨 Chuẩn Hóa Toolbar Trình Duyệt Web (`WebBrowseActivity`)
+- **Loại bỏ kích thước pixel cứng (PX) cũ:** Chuyển đổi toàn bộ sang `UiTheme.dp()`, đảm bảo hiển thị hoàn hảo và đồng nhất trên mọi màn hình từ 720p đến 1.5K/2K OLED.
+- **Thiết kế bo tròn viên thuốc (Pill Shape):** Đồng bộ chiều cao chuẩn `36dp` cho nút `🏠 Menu`, nút `«`, ô tìm kiếm URL, nút `Đi` và nút chuyển nền `🌙/☀️`.
 
 ---
 
 ## 📲 Hướng Dẫn Cài Đặt
-1. Tải tệp `DocTruyen-v1.1.9.apk` đính kèm bên dưới.
-2. Mở tệp và chọn **Cài đặt** (hoặc cài đè trực tiếp nếu đã có bản trước đó).
-3. Cấp quyền truy cập bộ nhớ khi app yêu cầu để quét truyện từ thư mục `Download/`.
+1. Tải tệp `DocTruyen-v1.2.0.apk` đính kèm bên dưới.
+2. Mở tệp và chọn **Cài đặt** (cài đè trực tiếp lên bản cũ).
+3. Thưởng thức giao diện đọc truyện mượt mà, khoa học và tiện lợi!

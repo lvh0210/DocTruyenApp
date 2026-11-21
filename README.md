@@ -49,6 +49,7 @@
 | **v1.0 – v1.1.0** | Lõi giải mã EPUB 2/3 Lazy Stream siêu tốc, TXT reader, bóc tách web trực tiếp, dịch vụ phát TTS nền chuẩn MediaSession | Hoàn thành |
 | **v1.1.2 – v1.1.5** | Quét đệ quy thư mục `Download/`, cử chỉ vuốt chuyển chương, đồng bộ vị trí đọc SQLite và quản lý ẩn/xóa truyện triệt để | Hoàn thành |
 | **v1.1.8** | Tối ưu hóa UI/UX toàn diện: OLED Pure Black `#000000`, thanh tiến độ đọc mỏng, bộ chặn quảng cáo nâng cao, tăng tốc phần cứng WebView | Hoàn thành |
-| **v1.1.9** *(Hiện tại)* | Nút `🏠 Menu` & phím Back thoát thẳng về Menu; bảng màu Deep Obsidian sang trọng; keystore ký số cố định; phát hành file cài đặt chuẩn `DocTruyen-v1.1.9.apk` | Đã phát hành |
-| **v1.2+** *(Đề xuất)* | Đồng bộ bookmark/tiến độ đọc đám mây (WebDAV / Drive), nạp truyện offline hàng loạt | Lộ trình tới |
+| **v1.1.9** | Nút `🏠 Menu` & phím Back thoát thẳng về Menu; bảng màu Deep Obsidian sang trọng; keystore ký số cố định | Hoàn thành |
+| **v1.2.0** *(Hiện tại)* | Tái cấu trúc giao diện chuẩn Native: Sticky Top Navigation, triệt tiêu hoàn toàn Layout Shift, cụm nút 50:50 cân đối, Toolbar web bo tròn viên thuốc chuẩn `dp` | Đã phát hành |
+| **v1.3+** *(Đề xuất)* | Đồng bộ bookmark/tiến độ đọc đám mây (WebDAV / Drive), nạp truyện offline hàng loạt | Lộ trình tới |
 
