@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Truyện Full",
+        "id": "000001",
+        "source": "truyenfull",
+        "url": "https://truyenfull.live",
+        "version": 2,
+        "cover": "https://truyenfull.live/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "Mê Truyện CV",
+        "id": "000002",
+        "source": "truyencv",
+        "url": "https://metruyencv.com/",
+        "version": 2,
+        "cover": "https://metruyencv.com/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "Mê Truyện Chữ",
+        "id": "000003",
+        "source": "metruyenchu",
+        "url": "https://metruyenchu.com.vn",
+        "version": 2,
+        "cover": "https://metruyenchu.com.vn/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "WeTruyen (DTruyen)",
+        "id": "000004",
+        "source": "wetruyen",
+        "url": "https://wetruyen.com",
+        "version": 2,
+        "cover": "https://wetruyen.com/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "WikiCV (Kho Convert)",
+        "id": "000005",
+        "source": "wikicv",
+        "url": "https://wikicv.org/",
+        "version": 2,
+        "cover": "https://wikicv.org/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "App Truyện Chữ",
+        "id": "000006",
+        "source": "apptruyenchu",
+        "url": "https://apptruyenchu.pro",
+        "version": 2,
+        "cover": "https://apptruyenchu.pro/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Trích Tinh Lâu (18+ / H Văn)",
+        "id": "000007",
+        "source": "trichtinhlau",
+        "url": "https://trichtinhlau.com",
+        "version": 2,
+        "cover": "https://trichtinhlau.com/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Sắc Hiệp Viện (Top 1 Sắc)",
+        "id": "000008",
+        "source": "sachiepvien",
+        "url": "https://sachiepvien.net",
+        "version": 2,
+        "cover": "https://sachiepvien.net/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Tử Sắc Hiệp (Chuyên Sắc)",
+        "id": "000009",
+        "source": "tusachiep",
+        "url": "https://tusachiep.xyz",
+        "version": 2,
+        "cover": "https://tusachiep.xyz/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Truyện Sắc Me (H Văn)",
+        "id": "000010",
+        "source": "truyensac_me",
+        "url": "https://truyensac.me",
+        "version": 2,
+        "cover": "https://truyensac.me/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 WeTruyen Sắc Hiệp",
+        "id": "000011",
+        "source": "wetruyen_sac",
+        "url": "https://wetruyen.com/the-loai/sac/",
+        "version": 2,
+        "cover": "https://wetruyen.com/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Haha Truyện (Sắc & Thịt Văn)",
+        "id": "000012",
+        "source": "hahatruyen",
+        "url": "https://hahatruyen.com.vn",
+        "version": 2,
+        "cover": "https://hahatruyen.com.vn/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Truyện Sex Net (18+)",
+        "id": "000013",
+        "source": "truyensex_net",
+        "url": "https://truyensex.net",
+        "version": 2,
+        "cover": "https://truyensex.net/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Mê Truyện Hot",
+        "id": "000014",
+        "source": "metruyenhot",
+        "url": "https://metruyenhotvn.com/",
+        "version": 2,
+        "cover": "https://metruyenhotvn.com/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 HentaiVN (Truyện Tranh 18+)",
+        "id": "000015",
+        "source": "hentaivn",
+        "url": "https://hentaivn.tv",
+        "version": 2,
+        "cover": "https://hentaivn.tv/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 LX Manga (Truyện Tranh 18+)",
+        "id": "000016",
+        "source": "lxmanga",
+        "url": "https://lxmanga.top",
+        "version": 2,
+        "cover": "https://lxmanga.top/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Say Hentai (Manhwa 18+)",
+        "id": "000017",
+        "source": "sayhentai",
+        "url": "https://sayhentai.cx",
+        "version": 2,
+        "cover": "https://sayhentai.cx/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Manhwa18 (Truyện Tranh Màu)",
+        "id": "000018",
+        "source": "manhwa18",
+        "url": "https://manhwa18.cc",
+        "version": 2,
+        "cover": "https://manhwa18.cc/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 Manga18fx (Webtoon & Manhwa)",
+        "id": "000019",
+        "source": "manga18fx",
+        "url": "https://manga18fx.com",
+        "version": 2,
+        "cover": "https://manga18fx.com/favicon.ico",
+        "download": ""
+    },
+    {
+        "name": "🔞 nhentai (Manga Doujinshi 18+)",
+        "id": "000020",
+        "source": "nhentai",
+        "url": "https://nhentai.net",
+        "version": 2,
+        "cover": "https://nhentai.net/favicon.ico",
+        "download": ""
+    }
+]

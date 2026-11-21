@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <title>DocTruyen Reader</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-color: #0f172a;
+            --title-color: #1e40af;
+            --font-size: 19px;
+            --line-height: 1.85;
+            --para-spacing: 1.25em;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji";
+            --highlight-bg: rgba(37, 99, 235, 0.14);
+            --highlight-border: #2563eb;
+            --highlight-text: #1e3a8a;
+            --btn-bg: rgba(100, 116, 139, 0.12);
+            --btn-color: #0f172a;
+            --border-color: rgba(148, 163, 184, 0.25);
+            --progress-color: linear-gradient(90deg, #2563eb, #06b6d4);
+        }
+
+        body.theme-dark {
+            --bg-color: #10121a;
+            --text-color: #e2e8f0;
+            --title-color: #60a5fa;
+            --highlight-bg: rgba(96, 165, 250, 0.22);
+            --highlight-border: #60a5fa;
+            --highlight-text: #ffffff;
+            --btn-bg: rgba(255, 255, 255, 0.08);
+            --btn-color: #e2e8f0;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --progress-color: linear-gradient(90deg, #3b82f6, #38bdf8);
+        }
+
+        body.theme-black {
+            --bg-color: #000000;
+            --text-color: #e2e8f0;
+            --title-color: #93c5fd;
+            --highlight-bg: rgba(147, 197, 253, 0.25);
+            --highlight-border: #93c5fd;
+            --highlight-text: #ffffff;
+            --btn-bg: rgba(255, 255, 255, 0.09);
+            --btn-color: #e2e8f0;
+            --border-color: rgba(255, 255, 255, 0.12);
+            --progress-color: linear-gradient(90deg, #60a5fa, #06b6d4);
+        }
+
+        body.theme-sepia {
+            --bg-color: #fbf0d9;
+            --text-color: #4a3728;
+            --title-color: #78350f;
+            --highlight-bg: rgba(180, 83, 9, 0.18);
+            --highlight-border: #b45309;
+            --highlight-text: #451a03;
+            --btn-bg: rgba(120, 53, 15, 0.1);
+            --btn-color: #4a3728;
+            --border-color: rgba(120, 53, 15, 0.2);
+            --progress-color: linear-gradient(90deg, #b45309, #d97706);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Reading Progress Bar */
+        #reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3.5px;
+            width: 0%;
+            background: var(--progress-color);
+            z-index: 99999;
+            transition: width 0.12s ease-out;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            font-size: var(--font-size);
+            line-height: var(--line-height);
+            padding: calc(24px + env(safe-area-inset-top, 0px)) 20px calc(140px + env(safe-area-inset-bottom, 0px)) 20px;
+            transition: background-color 0.25s ease, color 0.25s ease;
+            user-select: text;
+            -webkit-user-select: text;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            overflow-x: hidden;
+        }
+
+        #chapter-title {
+            color: var(--title-color);
+            font-size: 1.38em;
+            font-weight: 700;
+            margin-bottom: 24px;
+            padding-bottom: 14px;
+            border-bottom: 1.5px solid var(--border-color);
+            line-height: 1.35;
+            letter-spacing: -0.01em;
+            word-wrap: break-word;
+        }
+
+        #chapter-content p {
+            margin-bottom: var(--para-spacing);
+            text-align: justify;
+            text-justify: inter-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            padding: 6px 8px;
+            border-radius: 6px;
+            border-left: 3.5px solid transparent;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+            cursor: pointer;
+        }
+
+        #chapter-content p:active {
+            background-color: rgba(128, 128, 128, 0.08);
+        }
+
+        #chapter-content p.tts-active {
+            background-color: var(--highlight-bg) !important;
+            border-left: 3.5px solid var(--highlight-border) !important;
+            color: var(--highlight-text) !important;
+        }
+
+        #chapter-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1.5px solid var(--border-color);
+            gap: 12px;
+        }
+
+        .btn-nav {
+            flex: 1;
+            padding: 14px 16px;
+            background: var(--btn-bg);
+            color: var(--btn-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.1s ease, opacity 0.1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .btn-nav:active {
+            transform: scale(0.98);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="theme-light">
+    <!-- Sleek Top Reading Progress Bar -->
+    <div id="reading-progress"></div>
+
+    <h1 id="chapter-title">Đang tải chương...</h1>
+    <div id="chapter-content">
+        <p>Vui lòng đợi trong giây lát...</p>
+    </div>
+
+    <div class="nav-buttons">
+        <button class="btn-nav" id="btn-prev" onclick="prevChapter()">« Chương trước</button>
+        <button class="btn-nav" id="btn-next" onclick="nextChapter()">Chương sau »</button>
+    </div>
+
+    <script>
+        let paragraphs = [];
+        let currentActiveIndex = -1;
+
+        function escapeHtml(text) {
+            if (!text) return "";
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function updateProgressBar() {
+            const progressBar = document.getElementById("reading-progress");
+            if (!progressBar) return;
+            const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+            const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight || 0;
+            const clientHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+            const scrollDist = scrollHeight - clientHeight;
+            if (scrollDist > 0) {
+                const percent = Math.min(100, Math.max(0, (scrollY / scrollDist) * 100));
+                progressBar.style.width = percent.toFixed(1) + "%";
+            } else {
+                progressBar.style.width = "0%";
+            }
+        }
+
+        function loadChapterData(data) {
+            if (!data) return;
+            loadChapter(data.title, data.html);
+        }
+
+        function loadChapter(title, htmlBody) {
+            document.getElementById("chapter-title").innerText = title || "Không có tiêu đề";
+            const contentDiv = document.getElementById("chapter-content");
+            window.scrollTo({ top: 0, behavior: 'instant' });
+            updateProgressBar();
+
+            const rawHtml = htmlBody || "<p>(Nội dung trống)</p>";
+
+            // 1. Tạo container DOM tạm thời để phân tích cấu trúc
+            const temp = document.createElement("div");
+            temp.innerHTML = rawHtml;
+
+            // Xoá các thành phần rác: script, style, ads, control buttons, web watermarks
+            const junk = temp.querySelectorAll("script, style, button, noscript, iframe, .ads, .quang-cao, .ad-banner, [class*='ads'], [id*='ads'], .chapter_control, .chapter-title, .chapter-nav, .current-book, a.btn, nav, .nav, footer, .footer, .watermark, .fb-comments, .fb_iframe_widget, div[style*='fixed']");
+            junk.forEach(j => j.remove());
+
+            // Tối ưu hoá tất cả ảnh trong nội dung
+            const imgs = temp.querySelectorAll("img");
+            imgs.forEach(img => {
+                img.setAttribute("loading", "lazy");
+                img.setAttribute("decoding", "async");
+            });
+
+            // 2. Thay thế tất cả thẻ <br> bằng ký tự xuống dòng \n
+            const brs = temp.querySelectorAll("br");
+            brs.forEach(br => {
+                br.replaceWith(document.createTextNode("\n"));
+            });
+
+            // 3. Với các thẻ block, thêm \n trước và sau để tách dòng chuẩn
+            const blocks = temp.querySelectorAll("p, div, h1, h2, h3, h4, h5, h6, li, blockquote, tr, article, section");
+            blocks.forEach(b => {
+                b.prepend(document.createTextNode("\n"));
+                b.append(document.createTextNode("\n"));
+            });
+
+            // 4. Lấy toàn bộ văn bản thô
+            const fullText = temp.innerText || temp.textContent || "";
+
+            // 5. Tách thành các đoạn văn riêng biệt
+            const rawLines = fullText.split(/\r?\n+/);
+            paragraphs = [];
+            let newHtml = "";
+            let pIndex = 0;
+
+            const junkLineRegex = /^(bạn đang đọc truyện|truyện được (convert|đăng|dịch)|ủng hộ (dịch giả|nhóm dịch)|chúc các bạn đọc truyện|chúc bạn đọc truyện vui vẻ|theo dõi fanpage|nguồn:)/i;
+
+            for (let i = 0; i < rawLines.length; i++) {
+                let line = rawLines[i].trim();
+                if (line.length === 0) continue;
+                if (junkLineRegex.test(line)) continue;
+
+                // Nếu đoạn quá dài (> 1000 ký tự), tự chia nhỏ theo dấu câu để TTS không vượt ngưỡng
+                if (line.length > 1000) {
+                    let sentences = line.match(/[^.!?]+[.!?]+|\S+/g) || [line];
+                    let currentChunk = "";
+                    for (let s = 0; s < sentences.length; s++) {
+                        let sent = sentences[s].trim();
+                        if (!sent) continue;
+                        if ((currentChunk + " " + sent).length > 600) {
+                            if (currentChunk.trim().length > 0) {
+                                paragraphs.push(currentChunk.trim());
+                                newHtml += `<p id="para_${pIndex}" data-pindex="${pIndex}">${escapeHtml(currentChunk.trim())}</p>\n`;
+                                pIndex++;
+                            }
+                            currentChunk = sent;
+                        } else {
+                            currentChunk = currentChunk.length === 0 ? sent : currentChunk + " " + sent;
+                        }
+                    }
+                    if (currentChunk.trim().length > 0) {
+                        paragraphs.push(currentChunk.trim());
+                        newHtml += `<p id="para_${pIndex}" data-pindex="${pIndex}">${escapeHtml(currentChunk.trim())}</p>\n`;
+                        pIndex++;
+                    }
+                } else {
+                    paragraphs.push(line);
+                    newHtml += `<p id="para_${pIndex}" data-pindex="${pIndex}">${escapeHtml(line)}</p>\n`;
+                    pIndex++;
+                }
+            }
+
+            if (paragraphs.length === 0) {
+                paragraphs.push("(Nội dung chương trống)");
+                newHtml = `<p id="para_0" data-pindex="0">(Nội dung chương trống)</p>`;
+            }
+
+            contentDiv.innerHTML = newHtml;
+            currentActiveIndex = -1;
+
+            if (window.AndroidBridge && window.AndroidBridge.onParagraphsParsed) {
+                window.AndroidBridge.onParagraphsParsed(title, JSON.stringify(paragraphs));
+            }
+        }
+
+        function getAllParagraphs() {
+            if (paragraphs && paragraphs.length > 0) {
+                return JSON.stringify(paragraphs);
+            }
+            const pElements = document.querySelectorAll("#chapter-content p[data-pindex]");
+            const res = [];
+            for (let i = 0; i < pElements.length; i++) {
+                const t = pElements[i].innerText.trim();
+                if (t.length > 0) res.push(t);
+            }
+            return JSON.stringify(res);
+        }
+
+        function getFirstVisibleParagraphIndex() {
+            const pElements = document.querySelectorAll("#chapter-content p[data-pindex]");
+            if (!pElements || pElements.length === 0) return 0;
+
+            for (let i = 0; i < pElements.length; i++) {
+                const rect = pElements[i].getBoundingClientRect();
+                if (rect.bottom >= 30) {
+                    return parseInt(pElements[i].getAttribute("data-pindex") || i);
+                }
+            }
+            return 0;
+        }
+
+        function highlightParagraph(index) {
+            if (currentActiveIndex >= 0) {
+                const prev = document.getElementById("para_" + currentActiveIndex);
+                if (prev) prev.classList.remove("tts-active");
+            }
+
+            currentActiveIndex = index;
+            const target = document.getElementById("para_" + index);
+            if (target) {
+                target.classList.add("tts-active");
+                target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function clearHighlight() {
+            if (currentActiveIndex >= 0) {
+                const prev = document.getElementById("para_" + currentActiveIndex);
+                if (prev) prev.classList.remove("tts-active");
+            }
+            currentActiveIndex = -1;
+        }
+
+        function setTheme(theme) {
+            document.body.className = "theme-" + theme;
+        }
+
+        function setFontSize(size) {
+            document.documentElement.style.setProperty('--font-size', size + 'px');
+        }
+
+        function prevChapter() {
+            if (window.AndroidBridge && window.AndroidBridge.requestPrevChapter) {
+                window.AndroidBridge.requestPrevChapter();
+            }
+        }
+
+        function nextChapter() {
+            if (window.AndroidBridge && window.AndroidBridge.requestNextChapter) {
+                window.AndroidBridge.requestNextChapter();
+            }
+        }
+
+        function restoreReadingPosition(pIndex, scrollY) {
+            try {
+                if (typeof pIndex === 'number' && pIndex > 0) {
+                    const el = document.getElementById("para_" + pIndex);
+                    if (el) {
+                        el.scrollIntoView({ behavior: 'auto', block: 'start' });
+                        updateProgressBar();
+                        return;
+                    }
+                }
+                if (typeof scrollY === 'number' && scrollY > 0) {
+                    window.scrollTo({ top: scrollY, behavior: 'auto' });
+                    updateProgressBar();
+                }
+            } catch (err) {
+                console.error("restoreReadingPosition error", err);
+            }
+        }
+
+        // Theo dõi cuộn trang: cập nhật thanh tiến độ và vị trí đọc
+        let scrollTimer = null;
+        window.addEventListener("scroll", function() {
+            updateProgressBar();
+            if (scrollTimer) clearTimeout(scrollTimer);
+            scrollTimer = setTimeout(function() {
+                const pIndex = getFirstVisibleParagraphIndex();
+                const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+                if (window.AndroidBridge && window.AndroidBridge.onScrollPositionChanged) {
+                    window.AndroidBridge.onScrollPositionChanged(pIndex, Math.round(scrollY));
+                }
+            }, 200);
+        }, { passive: true });
+
+        // Cử chỉ vuốt lật chương
+        let touchStartX = 0;
+        let touchStartY = 0;
+        let touchStartTime = 0;
+        let isTouching = false;
+        let hasSwiped = false;
+
+        window.addEventListener("touchstart", function(e) {
+            if (e.touches && e.touches.length === 1) {
+                touchStartX = e.touches[0].clientX;
+                touchStartY = e.touches[0].clientY;
+                touchStartTime = Date.now();
+                isTouching = true;
+            }
+        }, { passive: true });
+
+        window.addEventListener("touchend", function(e) {
+            if (!isTouching || !e.changedTouches || e.changedTouches.length === 0) return;
+            isTouching = false;
+
+            const sel = window.getSelection();
+            if (sel && sel.toString().trim().length > 0) {
+                return;
+            }
+
+            const touchEndX = e.changedTouches[0].clientX;
+            const touchEndY = e.changedTouches[0].clientY;
+            const elapsed = Date.now() - touchStartTime;
+
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
+
+            if (Math.abs(deltaX) >= 75 && Math.abs(deltaX) > Math.abs(deltaY) * 1.4 && Math.abs(deltaY) <= 100 && elapsed >= 50 && elapsed <= 650) {
+                hasSwiped = true;
+                setTimeout(function() { hasSwiped = false; }, 350);
+                if (deltaX < 0) {
+                    nextChapter();
+                } else {
+                    prevChapter();
+                }
+            }
+        }, { passive: true });
+
+        // Chạm vào màn hình để bật/tắt thanh điều khiển
+        document.body.addEventListener("click", function(e) {
+            if (hasSwiped) return;
+            if (e.target.tagName !== 'BUTTON' && e.target.tagName !== 'A') {
+                if (window.AndroidBridge && window.AndroidBridge.toggleControls) {
+                    window.AndroidBridge.toggleControls();
+                }
+            }
+        });
+    </script>
+</body>
+</html>

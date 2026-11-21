@@ -4,6 +4,9 @@ workspace/*.apk
 workspace/*.idsig
 workspace/backup_data/
 build/
+app/build/
+.gradle/
+local.properties
 
 # OS & Temp
 .DS_Store
