@@ -3,7 +3,7 @@
 Ứng dụng đọc truyện tranh & truyện chữ Android Native siêu nhẹ (< 1MB APK), hỗ trợ giải mã EPUB 3 / TXT stream, phát âm thanh đọc TTS chạy nền và lướt web truyện không quảng cáo.
 
 ## 📦 Tệp Cài Đặt (Release Asset)
-- **Tên tệp:** `com.doctruyen.apk`
+- **Tên tệp:** `DocTruyen-v1.1.9.apk`
 - **Dung lượng:** ~825 KB
 - **Package Name:** `com.doctruyen`
 - **Phiên bản:** `versionCode 10` - `versionName 1.1.9`
@@ -29,6 +29,6 @@
 ---
 
 ## 📲 Hướng Dẫn Cài Đặt
-1. Tải tệp `com.doctruyen.apk` đính kèm bên dưới.
+1. Tải tệp `DocTruyen-v1.1.9.apk` đính kèm bên dưới.
 2. Mở tệp và chọn **Cài đặt** (hoặc cài đè trực tiếp nếu đã có bản trước đó).
 3. Cấp quyền truy cập bộ nhớ khi app yêu cầu để quét truyện từ thư mục `Download/`.

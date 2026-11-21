@@ -1,31 +1,16 @@
 # KẾ HOẠCH TỐI ƯU HÓA & PHÁT TRIỂN: DocTruyenApp
 
-- [x] **Chặng 1: Khởi tạo & Phân tích hiện trạng dự án (Analysis & Knowledge Graph)**
-  - [x] 1.1: Quét cấu trúc dự án DocTruyenApp và đọc lịch sử CHECKPOINT.md
-  - [x] 1.2: Thiết lập công cụ xây dựng (apktool 2.10.0, OpenJDK 11, Android SDK tools)
-  - [x] 1.3: Chạy Graphify phân tích kiến trúc, mối quan hệ class và luồng dữ liệu
-- [x] **Chặng 2: Đánh giá & Lập kế hoạch tối ưu App, UI, Chức năng (Deep Audit)**
-  - [x] 2.1: Phân tích UI Theme, Layout, Design System (`UiTheme.smali`, `res/values`, `reader.html`)
-  - [x] 2.2: Phân tích Chức năng & Động cơ đọc (`ReaderActivity`, `ComicWebHelper`, `WebDirectScraper`, `EpubLazyEngine`, `TxtLazyEngine`)
-  - [x] 2.3: Phân tích Hiệu năng, Bộ nhớ, Trình chặn quảng cáo AdBlock & Dịch vụ TTS ngầm (`TtsPlaybackService`)
-  - [x] 2.4: Hoàn thiện giải pháp tối ưu code và kiến trúc
-- [x] **Chặng 3: Thực thi tối ưu hóa toàn diện (Comprehensive Optimization)**
-  - [x] 3.1: Tối ưu UI & Trải nghiệm người dùng (Thanh tiến độ đọc sách siêu mỏng, OLED Pure Black #000000, Dark/Sepia/Light theme, typography, padding safe-area)
-  - [x] 3.2: Tối ưu động cơ đọc sách & bóc tách web (Tối ưu hóa Reader HTML/JS, lazy loading ảnh, cache, lọc rác web truyện)
-  - [x] 3.3: Tối ưu Trình chặn quảng cáo AdBlock (Mở rộng bộ chọn CSS & MutationObserver, loại bỏ banner cờ bạc/phishing)
-  - [x] 3.4: Bật `hardwareAccelerated="true"` và `largeHeap="true"` trong AndroidManifest tăng tốc WebView và chống tràn RAM
-- [x] **Chặng 4: Biên dịch, Đóng gói & Xác thực APK (Build & Verification)**
-  - [x] 4.1: Biên dịch smali và tài nguyên qua apktool (0 lỗi cú pháp)
-  - [x] 4.2: Tối ưu zipalign và ký số APK bằng release keystore cố định (v1, v2, v3 scheme)
-  - [x] 4.3: Kiểm tra tính toàn vẹn và dung lượng tệp APK thành phẩm (825 KB)
-- [x] **Chặng 5: Khởi tạo Git & Đẩy mã nguồn lên GitHub (Git Initialization & Push)**
-  - [x] 5.1: Thiết lập `.gitignore` chuẩn cho dự án Android Reversing/Smali
-  - [x] 5.2: Tạo commit với thông điệp kỹ thuật chi tiết
-  - [x] 5.3: Tạo kho lưu trữ trên GitHub và đẩy mã nguồn lên remote (`lvh0210/DocTruyenApp`)
-  - [x] 5.4: Tạo Bản phát hành chính thức GitHub Release v1.1.8 kèm file cài đặt APK
-- [x] **Chặng 6: Nâng cấp Giao diện Sang trọng & Khắc phục Lỗi Thoát Menu Trực Tiếp (v1.1.9)**
-  - [x] 6.1: Viết lại `WebBrowseActivity.onBackPressed()` đóng Activity thoát thẳng ra Menu thay vì lặp lịch sử web
-  - [x] 6.2: Bổ sung nút `🏠 Menu` trên thanh công cụ duyệt web (`topBar`) qua `WebBrowseActivity$ExitClickListener`
-  - [x] 6.3: Thiết kế lại giao diện hiện đại: bảng màu Deep Obsidian (`UiTheme`), tiêu đề thanh thoát, huy hiệu v1.1.9
-  - [x] 6.4: Biên dịch, căn chỉnh zipalign và ký số APK v1.1.9 thành công
-  - [x] 6.5: Xuất bản GitHub Release v1.1.9 và đồng bộ mã nguồn lên Git
+- [x] **Chặng 1: Tối ưu hóa toàn diện App, UI & Trình đọc (v1.1.8)**
+  - [x] 1.1: Tối ưu UI (Thanh tiến độ OLED, Pure Black `#000000`, safe-area insets, typography)
+  - [x] 1.2: Bật tăng tốc phần cứng & largeHeap trong AndroidManifest; nâng cấp bộ lọc AdBlock
+  - [x] 1.3: Biên dịch, ký số và xuất bản GitHub Release v1.1.8
+- [x] **Chặng 2: Nâng cấp Giao diện Sang trọng & Nút Thoát Menu Trực Tiếp (v1.1.9)**
+  - [x] 2.1: Sửa triệt để `WebBrowseActivity.onBackPressed()` đóng Activity thoát thẳng ra Menu
+  - [x] 2.2: Bổ sung nút `🏠 Menu` trên thanh công cụ duyệt web (`topBar`)
+  - [x] 2.3: Tinh chỉnh Design System Deep Obsidian (`#0A0D14`), huy hiệu phiên bản thanh lịch
+  - [x] 2.4: Biên dịch APK v1.1.9 ký số cố định v1/v2/v3 scheme thành công (825 KB)
+- [x] **Chặng 3: Quy chuẩn hóa Bản phát hành GitHub & Tinh giản tài liệu**
+  - [x] 3.1: Đặt lại tiêu đề Release chuẩn xác: `DocTruyen v1.1.9`
+  - [x] 3.2: Đổi tên và đính kèm tệp asset đúng mã phiên bản: `DocTruyen-v1.1.9.apk`
+  - [x] 3.3: Tinh giản lộ trình phát triển trong README.md và PLAN.md tránh dài dòng
+  - [x] 3.4: Đồng bộ commit và đẩy toàn bộ mã nguồn lên GitHub repository
