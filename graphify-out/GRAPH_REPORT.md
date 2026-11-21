@@ -1,27 +1,27 @@
 # Graph Report - DocTruyenApp  (2026-11-21)
 
 ## Corpus Check
-- 63 files · ~32,564 words
+- 63 files · ~32,289 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 158 file(s) not represented in the graph (top: .smali 130, .zip 12, .xml 6)
-- WARNING: 158 of 230 files seen (69%) have no supported extractor and are missing from this graph entirely. It may look complete while representing only part of the codebase.
+- Unclassified: 162 file(s) not represented in the graph (top: .smali 132, .zip 12, .xml 6)
+- WARNING: 162 of 234 files seen (69%) have no supported extractor and are missing from this graph entirely. It may look complete while representing only part of the codebase.
 
 ## Summary
-- 104 nodes · 49 edges · 56 communities (5 shown, 51 thin omitted)
+- 101 nodes · 46 edges · 56 communities (5 shown, 51 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `51aa2b19`
+- Built from commit: `d379383e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - apktool.yml
-- CHECKPOINT TIẾN ĐỘ DỰ ÁN: DocTruyenApp (com.doctruyen)
-- Dự Án: Đọc Truyện (DocTruyen App)
+- CHECKPOINT: DocTruyenApp
+- Dá»± Ãn: Äá»c Truyá»‡n (DocTruyen App)
 - sdkInfo
-- 🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.2.0
+- 🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.2.1
 - app/assets/extensions/README.md
 - PLAN.md
 - apptruyenchu/src/genre.js
@@ -31,13 +31,13 @@
 - decompiled/assets/extensions/README.md
 
 ## God Nodes (most connected - your core abstractions)
-1. `🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.2.0` - 6 edges
-2. `Dự Án: Đọc Truyện (DocTruyen App)` - 4 edges
-3. `DocTruyen App v1.2.0 - Tái Cấu Trúc Giao Diện Chuẩn Native & Sticky Navigation` - 4 edges
-4. `sdkInfo` - 3 edges
-5. `versionInfo` - 3 edges
-6. `resourcesInfo` - 3 edges
-7. `CHECKPOINT TIẾN ĐỘ DỰ ÁN: DocTruyenApp (com.doctruyen)` - 3 edges
+1. `Dá»± Ãn: Äá»c Truyá»‡n (DocTruyen App)` - 4 edges
+2. `🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.2.1` - 4 edges
+3. `sdkInfo` - 3 edges
+4. `versionInfo` - 3 edges
+5. `resourcesInfo` - 3 edges
+6. `CHECKPOINT: DocTruyenApp` - 3 edges
+7. `DocTruyen App v1.2.1 - Khắc Phục Triệt Để Crash, Nút Thoát Menu Trực Quan & Giao Diện Hiện Đại` - 3 edges
 8. `usesFramework` - 2 edges
 9. `version` - 1 edges
 10. `apkFileName` - 1 edges
@@ -54,21 +54,21 @@
 Cohesion: 0.17
 Nodes (11): apkFileName, doNotCompress, resourcesInfo, keepRawValues, packageId, usesFramework, ids, version (+3 more)
 
-### Community 1 - "CHECKPOINT TIẾN ĐỘ DỰ ÁN: DocTruyenApp (com.doctruyen)"
+### Community 1 - "CHECKPOINT: DocTruyenApp"
 Cohesion: 0.50
-Nodes (3): 1. Công Việc Đã Hoàn Thành (Completed Tasks), 2. Thông Tin Bản Phát Hành & Tài Nguyên, CHECKPOINT TIẾN ĐỘ DỰ ÁN: DocTruyenApp (com.doctruyen)
+Nodes (3): CHECKPOINT: DocTruyenApp, Các Cải Tiến Đã Hoàn Thành Trong v1.2.1, Trạng Thái Dự Án (Cập nhật 21/11/2026)
 
-### Community 2 - "Dự Án: Đọc Truyện (DocTruyen App)"
+### Community 2 - "Dá»± Ãn: Äá»c Truyá»‡n (DocTruyen App)"
 Cohesion: 0.40
-Nodes (4): 1. Mục Tiêu Chính, 2. Cấu Trúc Thư Mục Dự Án, 3. Lịch Sử Phiên Bản & Mốc Phát Triển, Dự Án: Đọc Truyện (DocTruyen App)
+Nodes (4): 1. Má»¥c TiÃªu ChÃ­nh, 2. Cáº¥u TrÃºc ThÆ° Má»¥c Dá»± Ãn, 3. Lá»‹ch Sá»­ PhiÃªn Báº£n & Má»‘c PhÃ¡t Triá»ƒn, Dá»± Ãn: Äá»c Truyá»‡n (DocTruyen App)
 
 ### Community 3 - "sdkInfo"
 Cohesion: 0.67
 Nodes (3): sdkInfo, minSdkVersion, targetSdkVersion
 
-### Community 4 - "🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.2.0"
-Cohesion: 0.20
-Nodes (9): 1. 📌 Thanh Điều Hướng Cố Định (Sticky Top Navigation), 2. ⚡ Triệt Tiêu Hoàn Toàn Hiện Tượng Nhảy Giật (Zero Layout Shift), 3. ⚖️ Cụm Nút Thao Tác Cân Đối 50:50 (Balanced Action Cards), 4. 🌐 Tái Thiết Kế Tab Khám Phá Web (Modern Web Hub), 5. 🎨 Chuẩn Hóa Toolbar Trình Duyệt Web (`WebBrowseActivity`), DocTruyen App v1.2.0 - Tái Cấu Trúc Giao Diện Chuẩn Native & Sticky Navigation, 📲 Hướng Dẫn Cài Đặt, 📦 Tệp Cài Đặt (Release Asset) (+1 more)
+### Community 4 - "🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.2.1"
+Cohesion: 0.29
+Nodes (6): 1. 🛡️ Khắc Phục Triệt Để Lỗi Crash Khi Mở App & Mở Web, 2. 🏠 Giải Quyết Vấn Đề Thoát Menu Khi Đang Đọc Truyện (Smart Exit System), 3. 🎨 Giao Diện Capsule Pills Hiện Đại (Không Còn Thô Cứng), DocTruyen App v1.2.1 - Khắc Phục Triệt Để Crash, Nút Thoát Menu Trực Quan & Giao Diện Hiện Đại, 📦 Tệp Cài Đặt (Release Asset), 🌟 Điểm Mới & Cải Tiến Nổi Bật Trong Bản v1.2.1
 
 ## Knowledge Gaps
 - **51 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.

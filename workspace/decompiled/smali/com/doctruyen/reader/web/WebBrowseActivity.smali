@@ -1304,15 +1304,11 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/Button;->setTextSize(F)V
 
-    const/high16 v5, 0x42100000    # 36.0f
-
-    invoke-static {p0, v5}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v7
+    new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 v6, -0x2
 
-    new-instance v5, Landroid/widget/LinearLayout$LayoutParams;
+    const/4 v7, -0x2
 
     invoke-direct {v5, v6, v7}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
@@ -1352,31 +1348,13 @@
     .line 96
     iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->btnBack:Landroid/widget/Button;
 
-    const/high16 v4, 0x42180000    # 38.0f
-
-    invoke-static {p0, v4}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v5
-
-    const/high16 v4, 0x42100000    # 36.0f
-
-    invoke-static {p0, v4}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v6
-
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
+    const/16 v5, 0x50
+
+    const/4 v6, -0x2
+
     invoke-direct {v4, v5, v6}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
-
-    const/high16 v5, 0x40800000    # 4.0f
-
-    invoke-static {p0, v5}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v5
-
-    const/4 v6, 0x0
-
-    invoke-virtual {v4, v5, v6, v6, v6}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -1479,33 +1457,13 @@
     .line 129
     iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->btnGo:Landroid/widget/Button;
 
-    const/high16 v7, 0x42280000    # 42.0f
+    new-instance v7, Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-static {p0, v7}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
+    const/16 v8, 0x64
 
-    move-result v7
+    invoke-direct {v7, v8, v6}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    const/high16 v8, 0x42100000    # 36.0f
-
-    invoke-static {p0, v8}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v8
-
-    new-instance v9, Landroid/widget/LinearLayout$LayoutParams;
-
-    invoke-direct {v9, v7, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
-
-    const/high16 v7, 0x40800000    # 4.0f
-
-    invoke-static {p0, v7}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v7
-
-    const/4 v8, 0x0
-
-    invoke-virtual {v9, v8, v8, v7, v8}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
-
-    invoke-virtual {v0, v9}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v7}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 130
     iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->btnGo:Landroid/widget/Button;
@@ -1557,23 +1515,11 @@
     .line 144
     iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->btnDarkToggle:Landroid/widget/Button;
 
-    const/high16 v7, 0x42180000    # 38.0f
+    new-instance v7, Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-static {p0, v7}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
+    invoke-direct {v7, v8, v6}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    move-result v7
-
-    const/high16 v8, 0x42100000    # 36.0f
-
-    invoke-static {p0, v8}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v8
-
-    new-instance v9, Landroid/widget/LinearLayout$LayoutParams;
-
-    invoke-direct {v9, v7, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
-
-    invoke-virtual {v0, v9}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v7}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 145
     iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->btnDarkToggle:Landroid/widget/Button;
@@ -1590,6 +1536,11 @@
     iget-object v6, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->btnDarkToggle:Landroid/widget/Button;
 
     invoke-virtual {v0, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->topBar:Landroid/widget/LinearLayout;
+
+    iget-boolean v1, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->isDarkMode:Z
+
+    invoke-static {p0, v0, v1}, Lcom/doctruyen/ui/UiModernizer;->setupWebToolbar(Landroid/app/Activity;Landroid/widget/LinearLayout;Z)V
 
     .line 148
     iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->root:Landroid/widget/LinearLayout;
@@ -3249,10 +3200,11 @@
 .end method
 
 .method public onBackPressed()V
-    .locals 0
+    .locals 2
 
-    .line 621
-    invoke-virtual {p0}, Lcom/doctruyen/reader/web/WebBrowseActivity;->finish()V
+    iget-object v0, p0, Lcom/doctruyen/reader/web/WebBrowseActivity;->webView:Landroid/webkit/WebView;
+
+    invoke-static {p0, v0}, Lcom/doctruyen/ui/UiModernizer;->handleSmartBack(Landroid/app/Activity;Landroid/webkit/WebView;)Z
 
     return-void
 .end method

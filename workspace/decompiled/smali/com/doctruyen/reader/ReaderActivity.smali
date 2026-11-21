@@ -1323,6 +1323,13 @@
     invoke-direct {v3, v4, v5}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    const/4 v6, 0x1
+
+    invoke-static {p0, v6}, Lcom/doctruyen/ui/UiModernizer;->createMenuExitButton(Landroid/app/Activity;Z)Landroid/widget/Button;
+
+    move-result-object v6
+
+    invoke-virtual {v1, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 414
     new-instance v3, Landroid/widget/Button;

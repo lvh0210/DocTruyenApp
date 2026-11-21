@@ -49,8 +49,6 @@
 
 .field private tabWeb:Landroid/widget/TextView;
 
-.field private rootLayout:Landroid/widget/LinearLayout;
-
 
 # direct methods
 .method public constructor <init>()V
@@ -1245,17 +1243,26 @@
     invoke-static {v0, v1, v7}, Lcom/doctruyen/ui/UiTheme;->applySystemBarColors(Landroid/app/Activity;IZ)V
 
     .line 121
-    new-instance v7, Landroid/widget/LinearLayout;
+    new-instance v7, Landroid/widget/ScrollView;
 
-    invoke-direct {v7, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+    invoke-direct {v7, v0}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
+    .line 122
+    new-instance v8, Landroid/widget/LinearLayout$LayoutParams;
+
+    const/4 v9, -0x1
+
+    invoke-direct {v8, v9, v9}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v7, v8}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 123
     const/4 v8, 0x1
 
-    invoke-virtual {v7, v8}, Landroid/widget/LinearLayout;->setOrientation(I)V
+    invoke-virtual {v7, v8}, Landroid/widget/ScrollView;->setFillViewport(Z)V
 
-    invoke-virtual {v7, v1}, Landroid/widget/LinearLayout;->setBackgroundColor(I)V
-
-    iput-object v7, v0, Lcom/doctruyen/MainActivity;->rootLayout:Landroid/widget/LinearLayout;
+    .line 124
+    invoke-virtual {v7, v1}, Landroid/widget/ScrollView;->setBackgroundColor(I)V
 
     .line 126
     new-instance v1, Landroid/widget/LinearLayout;
@@ -1272,7 +1279,7 @@
 
     move-result v11
 
-    const/high16 v12, 0x41000000    # 8.0f
+    const/high16 v12, 0x41b00000    # 22.0f
 
     invoke-static {v0, v12}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
 
@@ -1306,25 +1313,13 @@
     invoke-virtual {v11, v14}, Landroid/widget/LinearLayout;->setGravity(I)V
 
     .line 134
-    const/high16 v15, 0x41900000    # 18.0f
-
-    invoke-static {v0, v15}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v13
-
     const/high16 v15, 0x41800000    # 16.0f
-
-    invoke-static {v0, v15}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v14
-
-    const/high16 v15, 0x40c00000    # 6.0f
 
     invoke-static {v0, v15}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
 
     move-result v12
 
-    invoke-virtual {v11, v13, v14, v13, v12}, Landroid/widget/LinearLayout;->setPadding(IIII)V
+    invoke-virtual {v11, v13, v13, v13, v12}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
     .line 136
     new-instance v12, Landroid/widget/LinearLayout;
@@ -1388,7 +1383,7 @@
     invoke-direct {v14, v0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     .line 152
-    const-string v15, " v1.2.0 "
+    const-string v15, " v1.1.8 "
 
     invoke-virtual {v14, v15}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -1568,9 +1563,7 @@
     invoke-virtual {v11, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 185
-    iget-object v8, v0, Lcom/doctruyen/MainActivity;->rootLayout:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v8, v11}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v1, v11}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 188
     new-instance v8, Landroid/widget/LinearLayout;
@@ -1600,7 +1593,9 @@
     invoke-virtual {v8, v13, v13, v13, v11}, Landroid/widget/LinearLayout;->setPadding(IIII)V
 
     .line 191
-    # resumeCardContainer will be added to the top of containerLibrary
+    iget-object v8, v0, Lcom/doctruyen/MainActivity;->resumeCardContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 194
     new-instance v8, Landroid/widget/LinearLayout;
@@ -1735,35 +1730,7 @@
     invoke-virtual {v8, v11}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 206
-    new-instance v11, Landroid/widget/LinearLayout$LayoutParams;
-
-    const/4 v12, -0x1
-
-    const/4 v13, -0x2
-
-    invoke-direct {v11, v12, v13}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
-
-    const/high16 v12, 0x41800000    # 16.0f
-
-    invoke-static {v0, v12}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v12
-
-    const/4 v13, 0x0
-
-    const/high16 v14, 0x41000000    # 8.0f
-
-    invoke-static {v0, v14}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v14
-
-    invoke-virtual {v11, v12, v13, v12, v14}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
-
-    invoke-virtual {v8, v11}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    iget-object v11, v0, Lcom/doctruyen/MainActivity;->rootLayout:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v11, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 209
     new-instance v8, Landroid/view/View;
@@ -1786,36 +1753,7 @@
     invoke-virtual {v8, v11}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 211
-    iget-object v11, v0, Lcom/doctruyen/MainActivity;->rootLayout:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v11, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
-
-    # Create ScrollView scrollContent
-    new-instance v8, Landroid/widget/ScrollView;
-
-    invoke-direct {v8, v0}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
-
-    const/4 v11, 0x1
-
-    invoke-virtual {v8, v11}, Landroid/widget/ScrollView;->setFillViewport(Z)V
-
-    new-instance v11, Landroid/widget/LinearLayout$LayoutParams;
-
-    const/4 v12, -0x1
-
-    const/4 v13, 0x0
-
-    const/high16 v14, 0x3f800000    # 1.0f
-
-    invoke-direct {v11, v12, v13, v14}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
-
-    invoke-virtual {v8, v11}, Landroid/widget/ScrollView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    iget-object v11, v0, Lcom/doctruyen/MainActivity;->rootLayout:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v11, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
-
-    invoke-virtual {v8, v1}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
+    invoke-virtual {v1, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 216
     new-instance v8, Landroid/widget/LinearLayout;
@@ -1830,13 +1768,6 @@
     const/4 v12, 0x1
 
     invoke-virtual {v8, v12}, Landroid/widget/LinearLayout;->setOrientation(I)V
-
-    # Add resumeCardContainer to top of containerLibrary
-    iget-object v8, v0, Lcom/doctruyen/MainActivity;->containerLibrary:Landroid/widget/LinearLayout;
-
-    iget-object v11, v0, Lcom/doctruyen/MainActivity;->resumeCardContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v8, v11}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 220
     new-instance v8, Landroid/widget/LinearLayout;
@@ -1861,7 +1792,7 @@
     invoke-direct {v11, v0}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
     .line 225
-    const-string v12, "\ud83d\udcc2 M\u1edf T\u1ec7p S\u00e1ch"
+    const-string v12, "\ud83d\udcc2 M\u1edf T\u1ec7p T\u1eeb M\u00e1y..."
 
     invoke-virtual {v11, v12}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
@@ -1915,14 +1846,14 @@
     .line 231
     new-instance v10, Landroid/widget/LinearLayout$LayoutParams;
 
-    const/high16 v12, 0x3f800000    # 1.0f
+    const v12, 0x3f99999a    # 1.2f
 
     const/4 v15, -0x2
 
     invoke-direct {v10, v9, v15, v12}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
 
     .line 232
-    const/high16 v12, 0x40800000    # 4.0f
+    const/high16 v12, 0x41000000    # 8.0f
 
     invoke-static {v0, v12}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
 
@@ -1949,7 +1880,7 @@
     invoke-direct {v9, v0}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
     .line 238
-    const-string v10, "\ud83d\udd04 Qu\u00e9t Download"
+    const-string v10, "\ud83d\udd04 Qu\u00e9t Th\u01b0 M\u1ee5c Download"
 
     invoke-virtual {v9, v10}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
@@ -2004,14 +1935,6 @@
 
     invoke-direct {v10, v12, v15, v11}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
 
-    const/high16 v11, 0x40800000    # 4.0f
-
-    invoke-static {v0, v11}, Lcom/doctruyen/ui/UiTheme;->dp(Landroid/content/Context;F)I
-
-    move-result v11
-
-    invoke-virtual {v10, v11, v12, v12, v12}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
-
     invoke-virtual {v9, v10}, Landroid/widget/Button;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 244
@@ -2030,6 +1953,9 @@
 
     .line 267
     invoke-virtual {v8, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+    iget-boolean v10, v0, Lcom/doctruyen/MainActivity;->isDarkMode:Z
+
+    invoke-static {v11, v9, v10, v0}, Lcom/doctruyen/ui/UiModernizer;->styleQuickActions(Landroid/widget/Button;Landroid/widget/Button;ZLandroid/content/Context;)V
 
     .line 268
     iget-object v9, v0, Lcom/doctruyen/MainActivity;->containerLibrary:Landroid/widget/LinearLayout;
@@ -3341,11 +3267,10 @@
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 470
-    # v1 already added to ScrollView inside initViews
-    .line 471
-    iget-object v8, v0, Lcom/doctruyen/MainActivity;->rootLayout:Landroid/widget/LinearLayout;
+    invoke-virtual {v7, v1}, Landroid/widget/ScrollView;->addView(Landroid/view/View;)V
 
-    invoke-virtual {v0, v8}, Lcom/doctruyen/MainActivity;->setContentView(Landroid/view/View;)V
+    .line 471
+    invoke-virtual {v0, v7}, Lcom/doctruyen/MainActivity;->setContentView(Landroid/view/View;)V
 
     .line 472
     return-void
@@ -6639,6 +6564,15 @@
     return-void
 .end method
 
+.method private updateTabStyle(Landroid/widget/TextView;ZIIILandroid/content/Context;)V
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/doctruyen/MainActivity;->isDarkMode:Z
+
+    invoke-static {p1, p2, v0, p6}, Lcom/doctruyen/ui/UiModernizer;->styleTabPill(Landroid/widget/TextView;ZZLandroid/content/Context;)V
+
+    return-void
+.end method
 .method private updateTabStyle(Landroid/widget/TextView;ZIIILandroid/content/Context;)V
     .locals 0
 
